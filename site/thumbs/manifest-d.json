@@ -11,6 +11,10 @@
   "file": "thumbs/d-03.webp",
   "kind": "real"
  },
+ "d-03b": {
+  "file": "thumbs/placeholder-d-03b.svg",
+  "kind": "placeholder"
+ },
  "d-04": {
   "file": "thumbs/d-04.webp",
   "kind": "real"
