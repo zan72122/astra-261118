@@ -1,0 +1,104 @@
+{
+  "idle": {
+    "seconds": 10,
+    "distanceM": 0,
+    "hintAtS": 4.05,
+    "zones": 112,
+    "reedChangeDeg": 5.574059,
+    "waveChangeMM": 0.2571455,
+    "dustChangeM": 4.3730096,
+    "yardChangeDeg": 23.3423952
+  },
+  "speedOnly": {
+    "2": {
+      "speed": 1.99019,
+      "roughMM": 0.454636,
+      "bladeHz": 487.9537908,
+      "wind": 0.2487737,
+      "distance1sM": 1.9010799,
+      "heat1sK": 0.1169423,
+      "scrapes": 1
+    },
+    "6": {
+      "speed": 5.99019,
+      "roughMM": 0.454636,
+      "bladeHz": 703.9537908,
+      "wind": 0.7487737,
+      "distance1sM": 5.9010551,
+      "heat1sK": 0.1892747,
+      "scrapes": 0
+    }
+  },
+  "journey": {
+    "entered": [
+      {
+        "stage": 0,
+        "seconds": 0.05
+      },
+      {
+        "stage": 1,
+        "seconds": 43.15
+      },
+      {
+        "stage": 2,
+        "seconds": 62.2
+      },
+      {
+        "stage": 3,
+        "seconds": 83.8
+      },
+      {
+        "stage": 4,
+        "seconds": 122.65
+      },
+      {
+        "stage": 0,
+        "seconds": 163.1
+      }
+    ],
+    "elapsedS": 163.1,
+    "lapMarkM": 99.4548416,
+    "bellStrikes": 5,
+    "snowCrunches": 187,
+    "maxCompaction": 0.618699,
+    "maxThrownGrainM": 0.1206391,
+    "lights": 6,
+    "peakLamp": 0.9992393,
+    "peakLeanDeg": 4.2403431,
+    "peakPan": 0.1342775,
+    "roughRangeMM": [
+      0.1163516,
+      0.7915633
+    ],
+    "peakYardDeg": 35.3833225,
+    "wideCameraBehindM": 8.2
+  },
+  "maxMeasuredMps": 7.9998812,
+  "shortTap": {
+    "contactS": 0.0083333,
+    "coastM": 3.1416157,
+    "scrapes": 1
+  },
+  "adjacentMax": {
+    "metres": 0.3999941,
+    "speed": 0.14,
+    "tiltDeg": 2.1787882,
+    "bladeHz": 30.0157475,
+    "reedDeg": 0.3647819,
+    "waveMM": 0.0513652,
+    "dustM": 0.0646915,
+    "lamp": 0.0353816,
+    "bellDeg": 1.8024623,
+    "sailDeg": 1.4434241,
+    "compact": 0.1093376
+  },
+  "samples": {
+    "intervalS": 0.05,
+    "returns": 1,
+    "returnJumpM": 120.0666482,
+    "returnVeil": 0.9905,
+    "uniformBend": 0,
+    "uniformWave": 0,
+    "compared": 4674
+  }
+}
