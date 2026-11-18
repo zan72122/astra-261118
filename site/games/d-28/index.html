@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#e3d5bc">
+<link rel="icon" href="data:,">
+<title>オルゴールのうた</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body,main{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none;touch-action:none}
+body{background:#e3d5bc}
+main{position:relative;isolation:isolate}
+#view{width:100%;height:100%;display:block;outline:none;touch-action:none}
+#guide{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hud{position:absolute;pointer-events:none;color:#826237;user-select:none}
+svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.defs{position:absolute;width:0;height:0}
+#world{left:max(23px,env(safe-area-inset-left));top:max(22px,env(safe-area-inset-top));height:42px;display:flex;align-items:center;gap:12px;padding:4px 15px 4px 5px;border-radius:28px}
+.enamel{background:linear-gradient(155deg,rgba(255,251,232,.96),rgba(235,217,181,.95));border:1px solid rgba(140,111,64,.6);box-shadow:0 2px 8px #51381923,inset 0 0 0 2px #fff6dcaa,inset 0 0 0 3px #ad905d70}
+#world svg{width:32px;height:32px;border:1px solid #a78d60aa;border-radius:50%;padding:4px;background:#fff6df;color:#6a796c}
+.stones{display:flex;gap:7px}.stones i{width:6px;height:6px;transform:rotate(45deg);border:1px solid #a38d6c;border-radius:1px;background:#d0c1a5}.stones i.on{background:#688e8e;border-color:#657e77;box-shadow:0 0 0 2px #f9ecd1}
+#sound{right:max(23px,env(safe-area-inset-right));top:max(22px,env(safe-area-inset-top));position:absolute;width:43px;height:43px;padding:10px;border-radius:50%;color:#775f3f;cursor:pointer;touch-action:manipulation}
+#sound:focus-visible{outline:2px solid #497c85;outline-offset:3px}
+#journey{left:50%;bottom:max(22px,calc(env(safe-area-inset-bottom) + 12px));transform:translateX(-50%);display:flex;align-items:center;padding:5px 14px;gap:0;border-radius:30px;background:linear-gradient(165deg,#fffae9f5,#e9dcc1f5);box-shadow:0 2px 10px #59412628,inset 0 0 0 2px #fff5dba6,inset 0 0 0 3px #b79b6b70;border:1px solid #b29c7999}
+.badge{display:grid;width:34px;height:34px;place-items:center;border-radius:50%;border:1px solid transparent;color:#9a876b;transition:background .5s,color .5s}
+.badge svg{width:21px;height:21px}.badge.active{background:linear-gradient(145deg,#71989a,#456f73);color:#fff0ce;border-color:#b79b65;box-shadow:0 0 0 2px #fff0cd,inset 0 0 0 2px #ffffff22}
+.badge.done{color:#927540}.join{height:2px;width:16px;background:linear-gradient(90deg,transparent,#bca885 25%,#bca885 75%,transparent)}
+@media(max-width:550px){#world{left:14px;top:max(17px,env(safe-area-inset-top))}#sound{right:14px;top:max(17px,env(safe-area-inset-top))}#journey{bottom:max(25px,env(safe-area-inset-bottom))}}
+</style>
+</head>
+<body>
+<main>
+<canvas id="view" aria-label="木のオルゴール"></canvas>
+<canvas id="guide" aria-hidden="true"></canvas>
+<svg class="defs" aria-hidden="true"><defs>
+<symbol id="sail" viewBox="0 0 32 32"><path d="M4 23c5 2 17 2 24-1l-5 5H10zM16 4v18M13 7 4 20h9zM19 9v12h8z"/></symbol>
+<symbol id="air" viewBox="0 0 32 32"><path d="M10 18C0 5 16-1 23 6c5 6 0 11-4 15h-7zM13 21l1 4h5l1-5M13 26h7l-1 3h-5zM16 4c-5 6-3 11 0 16 3-5 5-11 0-16z"/></symbol>
+<symbol id="moon" viewBox="0 0 32 32"><path d="M19 4C6 3 3 18 12 24c7 5 14 0 16-5C17 24 10 12 19 4zM25 3l.9 3.6L29 8l-3.1 1.1L25 13l-.9-3.9L21 8l3.1-1.4z"/></symbol>
+<symbol id="winder" viewBox="0 0 32 32"><path d="m7 26 8-10m-5 7 3 2m-1-6 3 2"/><path d="M16 17c-7 2-11-4-8-8 3-4 7-1 8 2 0-5 4-8 8-6 6 4 1 11-5 10z"/><circle cx="11.7" cy="11.8" r="1.6"/><circle cx="21.4" cy="9" r="1.8"/></symbol>
+<symbol id="pins" viewBox="0 0 32 32"><ellipse cx="9" cy="18" rx="4" ry="8" transform="rotate(-25 9 18)"/><path d="m6 10 13-6c7-2 14 13 7 16l-14 6m1-17 2 4m3-7 2 4m1 4 2 4m-7-2 2 4"/></symbol>
+<symbol id="music" viewBox="0 0 32 32"><path d="M11 22V9l15-4v14M11 12l15-4"/><ellipse cx="7.5" cy="23.5" rx="3.8" ry="2.7" transform="rotate(-22 7.5 23.5)"/><ellipse cx="22.5" cy="20" rx="3.8" ry="2.7" transform="rotate(-22 22.5 20)"/></symbol>
+<symbol id="case" viewBox="0 0 32 32"><path d="m4 16 10-5 14 3-10 6zM4 16v8l14 4 10-7v-7M18 20v8M7 13 6 6l14-3 5 8M11 18v3l3 1v-3"/></symbol>
+<symbol id="on" viewBox="0 0 32 32"><path d="M5 12h5l8-7v22l-8-7H5zM22 11c3 3 3 7 0 10M26 7c5 5 5 13 0 18"/></symbol>
+<symbol id="off" viewBox="0 0 32 32"><path d="M5 12h5l8-7v22l-8-7H5zM23 12l6 8m0-8-6 8"/></symbol>
+</defs></svg>
+<div id="world" class="hud enamel" aria-hidden="true"><svg><use href="#sail"/></svg><span class="stones"><i class="on"></i><i></i><i></i></span></div>
+<button id="sound" class="enamel" aria-label="音の切り替え" aria-pressed="true"><svg><use href="#on"/></svg></button>
+<div id="journey" class="hud" aria-hidden="true"><span class="badge active"><svg><use href="#winder"/></svg></span><i class="join"></i><span class="badge"><svg><use href="#pins"/></svg></span><i class="join"></i><span class="badge"><svg><use href="#music"/></svg></span><i class="join"></i><span class="badge"><svg><use href="#case"/></svg></span></div>
+</main>
+<script src="vendor/three.min.js"></script>
+<script src="mechanism.js"></script>
+<script src="craft.js"></script>
+<script src="box.js"></script>
+<script src="window.js"></script>
+<script src="sound.js"></script>
+<script src="game.js"></script>
+</body></html>

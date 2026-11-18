@@ -1,0 +1,168 @@
+{
+  "stepSeconds": 0.05,
+  "samples": 5655,
+  "rows": {
+    "idle": {
+      "amount": 0,
+      "initialTorque": 0,
+      "peakSpeed": 0,
+      "drum": 0,
+      "gear": 0,
+      "key": 0,
+      "clicks": 0,
+      "notes": 0,
+      "firstHz": 0,
+      "peakFlex": 0,
+      "doll": 0,
+      "dust": 19.940288,
+      "water": 0.834513,
+      "light": 0.269702,
+      "boat": -9.805341,
+      "balloon": 2.321139,
+      "orrery": 0.494634
+    },
+    "weak": {
+      "amount": 1.6,
+      "initialTorque": 0.04416,
+      "peakSpeed": 0.23189,
+      "drum": 1.944343,
+      "gear": -5.346944,
+      "key": 1.6,
+      "clicks": 6,
+      "notes": 11,
+      "firstHz": 540.223472,
+      "peakFlex": 0.201897,
+      "doll": 0.057674,
+      "dust": 19.940288,
+      "water": 0.834513,
+      "light": 0.269702,
+      "boat": -9.805341,
+      "balloon": 2.321139,
+      "orrery": 0.996502
+    },
+    "strong": {
+      "amount": 4.8,
+      "initialTorque": 0.13248,
+      "peakSpeed": 0.538758,
+      "drum": 4.721051,
+      "gear": -12.98289,
+      "key": 4.8,
+      "clicks": 19,
+      "notes": 23,
+      "firstHz": 556.675312,
+      "peakFlex": 0.330198,
+      "doll": 0.202544,
+      "dust": 19.940288,
+      "water": 0.834513,
+      "light": 0.269702,
+      "boat": -9.805341,
+      "balloon": 2.321139,
+      "orrery": 1.708048
+    }
+  },
+  "chapters": [
+    {
+      "history": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "bells": 10,
+      "seconds": 41.5,
+      "addedHits": 9,
+      "pinDepth": 1,
+      "dollRotation": 16.652737,
+      "boatSpan": 62.044163,
+      "balloonSpan": 3.360333,
+      "orbitSpan": 7.694725
+    },
+    {
+      "history": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "bells": 6,
+      "seconds": 41.45,
+      "addedHits": 12,
+      "pinDepth": 1,
+      "dollRotation": 19.942823,
+      "boatSpan": 23.266972,
+      "balloonSpan": 28.523995,
+      "orbitSpan": 6.613823
+    },
+    {
+      "history": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "bells": 46,
+      "seconds": 41.45,
+      "addedHits": 10,
+      "pinDepth": 1,
+      "dollRotation": 18.097652,
+      "boatSpan": 62.666192,
+      "balloonSpan": 12.210953,
+      "orbitSpan": 28.150671
+    }
+  ],
+  "samePinPasses": [
+    {
+      "time": 0.35,
+      "Hz": 575.011236,
+      "speed": 0.513531
+    },
+    {
+      "time": 7.8,
+      "Hz": 605.969633,
+      "speed": 0.802547
+    },
+    {
+      "time": 16.35,
+      "Hz": 591.311879,
+      "speed": 0.661689
+    },
+    {
+      "time": 27.25,
+      "Hz": 573.847934,
+      "speed": 0.493196
+    },
+    {
+      "time": 43.9,
+      "Hz": 550.761818,
+      "speed": 0.270361
+    }
+  ],
+  "maximumAdjacentDifferences": {
+    "drum": 0.045005,
+    "speed": 0.087654,
+    "key": 0.36,
+    "gear": 0.123762,
+    "gearReveal": 0.175579,
+    "flex": 0.590673,
+    "doll": 0.05465,
+    "sway": 0.010377,
+    "toySlide": 0.085497,
+    "visits": 0.048313,
+    "lid": 0.110066,
+    "boat": 0.633896,
+    "heel": 0.00225,
+    "balloon": 0.317832,
+    "orrery": 0.061662,
+    "gust": 0.043867,
+    "water": 0.128873,
+    "dustX": 0.346473,
+    "dustY": 0.251482,
+    "light": 0.046646,
+    "pinDepth": 0.145355
+  },
+  "populations": {
+    "idleSamples": 200,
+    "uniformMoving": 0,
+    "activeTeethSamples": 4363
+  }
+}
