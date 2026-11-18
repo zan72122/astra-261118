@@ -1,0 +1,152 @@
+{
+  "intervalSeconds": 0.05,
+  "records": 2882,
+  "uniformNonzeroUpdates": 0,
+  "comparisons": 17250,
+  "maxDelta": {
+    "x": 36.476402,
+    "pitch": 253.059652,
+    "force": 5.978473,
+    "wheel": 0.08653,
+    "cart": 0.040577,
+    "feed": 0.041509,
+    "sun": 0.002074,
+    "thickness": 0.4,
+    "radius": 0.567331,
+    "wet": 0.023676,
+    "polish": 0.20506,
+    "reveal": 0.16014,
+    "moisture": 0.059635,
+    "dustMm": 0.593617,
+    "stemRad": 0.003044,
+    "joint": 0.134311,
+    "ribbonMm": 36.717712,
+    "dropMm": 74.122616
+  },
+  "experiments": [
+    {
+      "bladeMm": 2,
+      "commandMmPerS": 80,
+      "cell": 11,
+      "actualMmPerS": 78.374122,
+      "pitchHz": 326.653227,
+      "forceN": 11.04693,
+      "averageShavingWidthMm": 19.522776
+    },
+    {
+      "bladeMm": 2,
+      "commandMmPerS": 240,
+      "cell": 11,
+      "actualMmPerS": 235.169075,
+      "pitchHz": 453.92129,
+      "forceN": 11.245429,
+      "averageShavingWidthMm": 19.522776
+    },
+    {
+      "bladeMm": 8,
+      "commandMmPerS": 80,
+      "cell": 11,
+      "actualMmPerS": 78.653985,
+      "pitchHz": 399.989841,
+      "forceN": 16.51958,
+      "averageShavingWidthMm": 30.022776
+    },
+    {
+      "bladeMm": 8,
+      "commandMmPerS": 240,
+      "cell": 11,
+      "actualMmPerS": 235.088629,
+      "pitchHz": 527.391883,
+      "forceN": 16.763297,
+      "averageShavingWidthMm": 30.022776
+    }
+  ],
+  "stageTimes": {
+    "plane": 0,
+    "fit": 54.95,
+    "carry": 63.1,
+    "sun": 68.05,
+    "rain": 76.5,
+    "home": 104.6
+  },
+  "sounds": {
+    "shaving": 96,
+    "woodrain": 138,
+    "roof": 76,
+    "woodHzMin": 267.911189,
+    "woodHzMax": 457.102938
+  },
+  "idle": {
+    "seconds": 10,
+    "minDustMm": 9.716756,
+    "maxDustMm": 55.200754,
+    "stemRad": [
+      0.015182,
+      0.016273,
+      0.016797,
+      0.014668,
+      0.010784,
+      0.00988,
+      0.014125
+    ],
+    "sunChange": 0.035362
+  },
+  "wood": {
+    "thicknessMm": 29.2,
+    "passes": 7,
+    "radiusMinMm": 4.267887,
+    "radiusMaxMm": 4.558833,
+    "ribbons": 48
+  },
+  "fit": {
+    "locked": 4,
+    "asleep": 48,
+    "highestRibbonCenterMm": 63.485632
+  },
+  "cart": {
+    "wheelRadians": 69.307754,
+    "end": 1
+  },
+  "sun": {
+    "minReveal": 0.890587,
+    "maxReveal": 1
+  },
+  "rain": {
+    "wetMin": 0.000037,
+    "wetMax": 0.998858,
+    "wetTiles": 139,
+    "wheelRadians": 25.861535,
+    "water": 18.01158
+  },
+  "journeySeconds": 108.95,
+  "forceRangeN": [
+    11.381021,
+    14.576697
+  ],
+  "waypoints": [
+    [
+      54.95,
+      "fit"
+    ],
+    [
+      63.1,
+      "carry"
+    ],
+    [
+      68.05,
+      "sun"
+    ],
+    [
+      76.5,
+      "rain"
+    ],
+    [
+      104.6,
+      "home"
+    ],
+    [
+      108.95,
+      "plane"
+    ]
+  ]
+}
