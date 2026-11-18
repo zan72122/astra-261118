@@ -1,0 +1,189 @@
+{
+  "interval_s": 0.05,
+  "idle": {
+    "dust_max_displacement_m": 0.572095,
+    "cloth_max_displacement_m": 0.010145,
+    "sea_max_displacement_m": 0.037986,
+    "ferry_m": 0.231801,
+    "spatially_uniform_intervals": 0,
+    "moving_intervals": 200
+  },
+  "speed_0.05": {
+    "speed_m_s": 0.05,
+    "pitch_Hz": 565,
+    "open_ready_s": 19.4,
+    "peak_lift_m": 0.162015,
+    "lift_change_after_release_025s_m": 0.003208,
+    "uniform_intervals": 0
+  },
+  "speed_0.4": {
+    "speed_m_s": 0.4,
+    "pitch_Hz": 1650,
+    "open_ready_s": 2.45,
+    "peak_lift_m": 0.170536,
+    "lift_change_after_release_025s_m": 0.113175,
+    "uniform_intervals": 0
+  },
+  "cycle": {
+    "duration_s": 175.2,
+    "phases": [
+      "tape",
+      "flaps",
+      "opening",
+      "item",
+      "placing",
+      "item",
+      "placing",
+      "item",
+      "placing",
+      "song",
+      "songEnd",
+      "tape",
+      "flaps",
+      "opening",
+      "item",
+      "placing",
+      "item",
+      "placing",
+      "walk",
+      "walking",
+      "walk",
+      "walking",
+      "walk",
+      "walking",
+      "walk",
+      "walking",
+      "walk",
+      "walking",
+      "walkEnd",
+      "tape",
+      "flaps",
+      "opening",
+      "item",
+      "placing",
+      "tune",
+      "door",
+      "item",
+      "placing",
+      "water",
+      "dusk",
+      "lamp",
+      "night",
+      "dawn"
+    ],
+    "masses_kg": [
+      0.32,
+      0.48,
+      0.37,
+      0.21,
+      0.23,
+      0.85,
+      1.18
+    ],
+    "echo_at_impact_s": [
+      0.279927,
+      0.255891,
+      0.234307,
+      0.223671,
+      0.219625,
+      0.215979,
+      0.357021
+    ],
+    "footfalls_s": [
+      0.85,
+      6.05,
+      11.25,
+      16.45,
+      21.65
+    ],
+    "peaks": {
+      "leaf": 0.4977454231715053,
+      "wave": 0.08558434551082028,
+      "door": 1.5299999999999894,
+      "heat": 0.9999999999999964,
+      "evening": 0.9999985571246454,
+      "water": 0.9276657274731303,
+      "bird": 0.21719428165541674,
+      "open": 2.7538751186059978,
+      "fold": 1.5400019358317132,
+      "chime": 0.34,
+      "street": 1.0580016736430038
+    }
+  },
+  "section_checks": {
+    "air": {
+      "moving": 4200,
+      "uniform": 0
+    },
+    "cloth": {
+      "moving": 4200,
+      "uniform": 0
+    },
+    "sea": {
+      "moving": 4200,
+      "uniform": 0
+    },
+    "chime": {
+      "moving": 4108,
+      "uniform": 0
+    },
+    "leaves": {
+      "moving": 4200,
+      "uniform": 0
+    },
+    "lift": {
+      "moving": 710,
+      "uniform": 0
+    },
+    "bond": {
+      "moving": 396,
+      "uniform": 0
+    },
+    "flaps": {
+      "moving": 588,
+      "uniform": 0
+    },
+    "panels": {
+      "moving": 257,
+      "uniform": 0
+    },
+    "reeds": {
+      "moving": 117,
+      "uniform": 0
+    },
+    "wave": {
+      "moving": 1155,
+      "uniform": 0
+    },
+    "street": {
+      "moving": 386,
+      "uniform": 0
+    }
+  },
+  "adjacent_max": {
+    "dust_m": 0.020209,
+    "cloth_m": 0.001567,
+    "sea_m": 0.00359,
+    "peel_m": 0.02,
+    "lift_m": 0.033352,
+    "flap_rad": 0.243237,
+    "panel_rad": 0.091782,
+    "item_m": 0.115451,
+    "reed_rad": 0.114716,
+    "dial_rad": 0.073449,
+    "door_m": 0.033036,
+    "echo_s": 0.003502,
+    "leaf_rad": 0.075531,
+    "ripple_m": 0.032036,
+    "heat": 0.034337,
+    "evening": 0.008077,
+    "street": 0.017084,
+    "falling_drop_m": 0.30919
+  },
+  "checks": {
+    "release_recovery_m": 0.095884,
+    "drop_separation_m": 0.143178,
+    "echo_difference_s": 0.000686
+  },
+  "samples": 4205
+}

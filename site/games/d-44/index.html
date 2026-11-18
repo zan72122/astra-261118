@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#e7d6b9"><title>荷物をほどく朝</title><link rel="icon" href="data:,"><link rel="stylesheet" href="room.css"></head>
+<body><main id="room" aria-label="荷物をほどく朝"><canvas id="world" aria-label="日差しの入る部屋と三つの小包"></canvas>
+<svg width="0" height="0" class="symbols" aria-hidden="true"><defs>
+<symbol id="book" viewBox="0 0 32 32"><path d="M5 7.8c4.2-1.3 8-.1 11 2.1 3-2.2 6.8-3.4 11-2.1v16c-4.1-1.2-7.7-.1-11 2-3.3-2.1-6.9-3.2-11-2zM16 10v15M8.4 12c1.6 0 3 .4 4.3 1.1M19.4 13.1c1.3-.7 2.5-1.1 4.2-1.1"/></symbol>
+<symbol id="shoe" viewBox="0 0 32 32"><path d="M4.3 15.4 7.1 9c1.5-.6 2.5.1 2.8 1.4.4 2 2 2.8 4.1 2.3l1.9-3 4.6 5.1c1.8 1.8 4.1 2.7 6.4 3.3 1.1.3 1.7 1.3 1.7 2.8v2.3c-7.4 2.4-16.7.4-25.3-2.3zM4 18.2c8.2 3.1 16.1 4.4 24.2 2.5M17.4 13.1l-2.3 2M20 15.7l-2 1.6"/></symbol>
+<symbol id="radio" viewBox="0 0 32 32"><rect x="3.5" y="10.5" width="25" height="16" rx="3"/><path d="m7 10 16-6.5M8 15h8M8 18.6h8M8 22h8"/><circle cx="22.5" cy="18.3" r="2.7"/></symbol>
+<symbol id="lamp" viewBox="0 0 32 32"><path d="M11 5.5h10l4.4 13h-19zM16 18.5v7M10.5 26.5c2.2-2 8.8-2 11 0zM22 19v3"/></symbol>
+</defs></svg>
+<button id="sound" aria-label="音の切り替え" aria-pressed="true"><svg viewBox="0 0 32 32"><path d="M5 13h4.4l6-5v16l-6-5H5z"/><g class="waves"><path d="M20 11.2c3.1 2.5 3.1 7 0 9.6M23.6 7.8c5.1 4.5 5.1 12 0 16.5"/></g><path class="mute" d="m21 12 7 8m0-8-7 8"/></svg></button>
+<div id="chapters" aria-hidden="true"><i><svg><use href="#book"/></svg></i><b></b><i><svg><use href="#shoe"/></svg></i><b></b><i><svg><use href="#radio"/></svg></i><b></b><i><svg><use href="#lamp"/></svg></i></div>
+<div id="hint" aria-hidden="true"><svg viewBox="0 0 52 58"><path d="M15.6 31.3 9.1 13.6c-1.8-5.1 4.4-7.5 6.3-2.6l5.6 13.3-1.4-5.1c-1.1-3.8 4.1-5.2 5.6-1.9l2.3 5.6-1.1-4.7c-.8-3.3 4-4.6 5.3-1.2l2.2 5.4-.7-3.3c-.7-3.2 4-4.5 5.3-.9l4.7 12.5c1.9 5 .7 8.6-.6 11.8l.6 3.2-16 6.3-2.3-4.4c-5.7-1.9-9.8-6.6-13.4-9.4l-6.9-5.7c-3.7-3.2.2-7.9 3.6-5.7z" fill="#fff9e9" stroke="#79674e" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+<div id="finish"></div></main><script src="vendor/three.min.js"></script><script src="simulation.js"></script><script src="materials.js"></script><script src="models.js"></script><script src="architecture.js"></script><script src="sound.js"></script><script src="game.js"></script></body></html>
