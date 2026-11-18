@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta name="robots" content="noindex,nofollow"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#7f9fa7"><title>ロープウェイで谷をこえる</title>
+<style>
+*{box-sizing:border-box}html,body,main{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none;background:#bacdd0}main{position:relative;isolation:isolate;user-select:none;-webkit-user-select:none;touch-action:none}canvas{display:block;width:100%;height:100%;touch-action:none}svg{display:block;overflow:visible}
+#journey,#sound{position:absolute;top:max(26px,env(safe-area-inset-top));z-index:2;border:1px solid #fff9d449;background:linear-gradient(160deg,#253c40dc,#1a3036cd);box-shadow:0 3px 12px #10292e2b,inset 0 1px 1px #ffffff19;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+#journey{left:max(28px,env(safe-area-inset-left));height:46px;border-radius:25px;padding:5px 11px 5px 6px;display:flex;align-items:center;gap:6px;pointer-events:none}.stop{width:31px;height:31px;display:grid;place-items:center;color:#d3dfd6aa;border:1px solid transparent;border-radius:50%;transition:background .8s,color .8s,box-shadow .8s}.stop svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.stop.on{color:#574827;background:linear-gradient(145deg,#fff0be,#e7c98f);border-color:#fff7d7;box-shadow:0 1px 5px #11282e75}.stop.past{color:#eddaa6}.trail{width:11px;height:1px;background:repeating-linear-gradient(to right,#d5d6ba8c 0 2px,transparent 2px 5px)}
+#sound{right:max(26px,env(safe-area-inset-right));width:46px;height:46px;border-radius:50%;padding:10px;cursor:pointer;color:#f6ecd4;touch-action:manipulation}#sound svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}#sound .off{display:none}#sound.muted .off{display:block}#sound.muted .wave{display:none}
+#hint{position:absolute;top:0;left:0;width:52px;height:60px;opacity:0;pointer-events:none;filter:drop-shadow(0 2px 4px #23333088);will-change:transform,opacity;z-index:1}
+#optic{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle closest-side at 50% 50%,transparent 77%,#17252680 92%,#182827f5 102%);opacity:0}
+@media(max-width:600px){#journey,#sound{top:max(17px,env(safe-area-inset-top))}#journey{left:15px;gap:3px;height:41px;padding:4px 8px 4px 5px}.stop{width:28px;height:28px}.stop svg{width:20px;height:20px}.trail{width:8px}#sound{right:15px;width:41px;height:41px;padding:9px}}
+</style></head>
+<body><main id="game" aria-label="山のロープウェイ"><canvas id="view" aria-label="山岳駅のゴンドラ"></canvas>
+<div id="journey" role="img" aria-label="旅の道のり">
+<div class="stop on"><svg viewBox="0 0 24 24"><path d="m3 4 17-2m-9 2 1 3v2M6 10q6-2 12 0l1 8q-6 3-14 0zM6 15h12m-6-5v5"/></svg></div><i class="trail"></i>
+<div class="stop"><svg viewBox="0 0 24 24"><path d="m3 11 14-7 3 6-14 6zm10 2-1 2m0 0-4 6m4-6 4 6m-4-6v6M4 12l-2 1 1 3 2-1"/></svg></div><i class="trail"></i>
+<div class="stop"><svg viewBox="0 0 24 24"><path d="m2 13 9-8 10 8M5 12v8h13v-8M8 20v-5h4v5m4-13V4h2v5"/></svg></div><i class="trail"></i>
+<div class="stop"><svg viewBox="0 0 24 24"><path d="M2 17h20M5 20h14M7 15a5 5 0 0 1 10 0M12 3v3M4 7l2 2m14-2-2 2M2 13h2m16 0h2"/></svg></div></div>
+<button id="sound" aria-label="音を切り替える" aria-pressed="true"><svg viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3z"/><g class="wave"><path d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"/></g><path class="off" d="m16 9 6 6m0-6-6 6"/></svg></button>
+<svg id="hint" viewBox="0 0 50 58" aria-hidden="true"><g fill="#fff3d8" fill-opacity=".92" stroke="#715f47" stroke-width="1.55" stroke-linejoin="round"><path d="m18 30-4-19c-.8-4 4.5-5.5 5.6-1.4L24 25l-.9-5c-.7-3.5 4.1-4.6 5-.9l1 4.3-.4-3.2c-.6-3.3 4-4.1 4.8-.7l.9 4.1c-.7-3.3 3.7-4.4 4.7-.8l2 9.2c1.8 7.6-2.3 11.6-2.1 16.2l-16.5 3c-1.1-5.4-6.3-8.4-9.3-11.5L5 31.2c-2.4-2.9 1-6 3.8-3.9l8 6z"/></g></svg>
+<div id="optic"></div></main>
+<script src="vendor/three.min.js"></script><script src="simulation.js"></script><script src="scenery.js"></script><script src="models.js"></script><script src="director.js"></script><script src="sound.js"></script><script src="game.js"></script></body></html>
