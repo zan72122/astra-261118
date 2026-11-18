@@ -1,0 +1,160 @@
+{
+  "sampleSeconds": 0.05,
+  "scenarios": {
+    "idle": {
+      "seconds": 10.000000000000076,
+      "verticalRangesM": [
+        0.0363535,
+        0.0723184,
+        0.0392964,
+        0.0796983,
+        0.0597359
+      ],
+      "depthsM": [
+        0.3713569,
+        0.3359176,
+        0.2241651,
+        0.5102306,
+        0.2690489
+      ],
+      "volumesM3": [
+        0.6403856,
+        0.167161,
+        0.4466301,
+        2.1299575,
+        1.277724
+      ],
+      "guideStartsS": 4.05,
+      "gullDisplacementM": 11.5498896,
+      "moteDisplacementM": 1.5688046
+    },
+    "speed2": {
+      "speedMps": 2,
+      "lambdaM": 1.0469565,
+      "sourceAmplitudeM": 0.06799999999999999,
+      "radiusAt1sM": 1.2,
+      "measuredSpeedMps": 1.2,
+      "measuredDecayPerS": 0.9,
+      "amplitudeEnvelopeAfter1sM": 0.0276467,
+      "sampleAtHalfSecondM": 0.0289367
+    },
+    "speed4": {
+      "speedMps": 4,
+      "lambdaM": 0.8711111,
+      "sourceAmplitudeM": 0.068,
+      "radiusAt1sM": 1.2,
+      "measuredSpeedMps": 1.2,
+      "measuredDecayPerS": 0.9,
+      "amplitudeEnvelopeAfter1sM": 0.0276467,
+      "sampleAtHalfSecondM": 0.0221623
+    },
+    "wavelengthOnlyMaxDifferenceM": 0.0111139,
+    "swell": {
+      "broadSlow": {
+        "sourceM": 0.275175,
+        "crestM": 0.2077038
+      },
+      "broadFast": {
+        "sourceM": 0.068,
+        "crestM": 0.0513268
+      },
+      "smallSlow": {
+        "sourceM": 0.050175,
+        "crestM": 0.0378724
+      }
+    },
+    "voyage": {
+      "seconds": 127.7,
+      "strokes": 12,
+      "deliveriesS": [
+        5.8,
+        8.1,
+        11.3,
+        58.1,
+        62.25
+      ],
+      "maxTideM": 0.9799898,
+      "maxGateRad": 1.48,
+      "maxSimultaneousDrops": 35,
+      "maxSprayAboveSeaM": 0.6132897,
+      "maxBellRad": 0.5327992,
+      "maxChargeM": 0.4578915,
+      "maxReleases": 4,
+      "maximumHoistFraction": 1,
+      "maxLiftM": 1.6268726,
+      "minimumDraftDuringLoadingM": [
+        0,
+        0,
+        0,
+        0,
+        0.2536045
+      ],
+      "maxWakeSamples": 248,
+      "maxWakeLengthM": 23.0690803,
+      "maxVesselTravelM": 19.5481099,
+      "maxShipSpeedMps": 1.7772545,
+      "pontoonRollDuringDepartureRad": 0.3161905,
+      "maxSunFraction": 0.9776877
+    }
+  },
+  "maximumDelta": {
+    "gridM": 0.0180545,
+    "gridVelocityMps": 0.3741455,
+    "bodyHorizontalM": 0.0986313,
+    "bodyVerticalM": 0.0495107,
+    "bodyRollRad": 0.1108337,
+    "draftM": 0.0724918,
+    "surfaceM": 0.1056936,
+    "tide": 0.0037688,
+    "gate": 0.0049773,
+    "sun": 0.0035457,
+    "bellAngle": 0.0874633,
+    "passage": 0.0025,
+    "shipHorizontalM": 0.1098541,
+    "birdHorizontalM": 0.077743,
+    "dropVerticalM": 0.1472998
+  },
+  "events": {
+    "water": 80,
+    "wood": 11,
+    "bell": 5,
+    "splash": 5,
+    "gull": 9,
+    "phase": 5,
+    "horn": 3
+  },
+  "stages": [
+    {
+      "stage": 0,
+      "atS": 0
+    },
+    {
+      "stage": 1,
+      "atS": 11.3
+    },
+    {
+      "stage": 2,
+      "atS": 47.4
+    },
+    {
+      "stage": 3,
+      "atS": 62.25
+    },
+    {
+      "stage": 4,
+      "atS": 92.2
+    },
+    {
+      "stage": 0,
+      "atS": 127.7
+    }
+  ],
+  "spatialCheck": {
+    "adjacentIntervals": 3022,
+    "uniformGridIntervals": 0,
+    "uniformBodyIntervals": 0,
+    "uniformBirdIntervals": 0,
+    "uniformMoteIntervals": 0,
+    "cellsPerInterval": 4472
+  }
+}

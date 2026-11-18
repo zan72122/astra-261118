@@ -23,6 +23,10 @@
   "file": "thumbs/d-04.webp",
   "kind": "real"
  },
+ "d-04c": {
+  "file": "thumbs/placeholder-d-04c.svg",
+  "kind": "placeholder"
+ },
  "d-05": {
   "file": "thumbs/d-05.webp",
   "kind": "real"
