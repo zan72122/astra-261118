@@ -1,0 +1,164 @@
+{
+  "step_s": 0.05,
+  "samples": 11351,
+  "sectionsChecked": 45404,
+  "uniformSections": 0,
+  "minSpread_m": 0.0000195670261,
+  "idle10s": {
+    "changedCells": 364,
+    "maxHeightChange_m": 0.00835518481,
+    "hullChange_m": -0.0000324948657,
+    "dustTravel_m": 1.68597166,
+    "guideStart_s": 4.05,
+    "activeVapour": 3
+  },
+  "headTest": {
+    "head_m": [
+      0.625,
+      1.25
+    ],
+    "flowAt1s_m_s": [
+      0.204442802,
+      0.408885604
+    ],
+    "dischargeAt1s_m3_s": [
+      13.8816663,
+      27.7633325
+    ],
+    "ratio": 2
+  },
+  "release": {
+    "flowAfterPoint3s_m_s": 0.121090024,
+    "additionalRise_m": 0.0844709376
+  },
+  "locks": {
+    "rise_m": [
+      1.24801821,
+      2.29802543,
+      1.34801921
+    ],
+    "hold_s": [
+      14.55,
+      25.5,
+      15.85
+    ]
+  },
+  "stages": [
+    [
+      "lock0",
+      0
+    ],
+    [
+      "cross0",
+      14.55
+    ],
+    [
+      "lock1",
+      28.1
+    ],
+    [
+      "cross1",
+      53.6
+    ],
+    [
+      "lock2",
+      65.1
+    ],
+    [
+      "cross2",
+      80.95
+    ],
+    [
+      "rig",
+      92.6
+    ],
+    [
+      "cruise",
+      97.4
+    ],
+    [
+      "welcome",
+      121.9
+    ],
+    [
+      "lantern",
+      131.85
+    ],
+    [
+      "salute",
+      138
+    ],
+    [
+      "return",
+      150
+    ],
+    [
+      "drain2",
+      175.5
+    ],
+    [
+      "backCross1",
+      200.15
+    ],
+    [
+      "drain1",
+      211.05
+    ],
+    [
+      "backCross0",
+      237.5
+    ],
+    [
+      "drain0",
+      250.15
+    ]
+  ],
+  "firstCycle_s": 274.6,
+  "secondCycle_s": 274.45,
+  "audio_Hz": {
+    "lowMin": 54.0349103,
+    "lowMax": 101.672269,
+    "cutoffMax": 2617.91374
+  },
+  "maxGate_rad": 1.44,
+  "maxWetLine_m": 5.07,
+  "maxWetLag_m": 2.05933379,
+  "maxClothSpread_m": 0.24834907,
+  "peaks": {
+    "flow": [
+      0.461100841,
+      0.539512661,
+      0.441715154
+    ],
+    "swirl": [
+      0.34382106,
+      1.12257848,
+      0.345701887
+    ],
+    "fishHeight": 1.04984825,
+    "peakDrops": 21,
+    "activeFoam": 100,
+    "lift": 1,
+    "speed": 1.36,
+    "bell": 0.27414249,
+    "light": 0.999954641,
+    "wing": 7.22502266,
+    "heave": 5.02259875
+  },
+  "maxStep": {
+    "level": 0.0269718263,
+    "valve": 0.118935035,
+    "gate": 0.0501209582,
+    "heave": 0.0287331485,
+    "travel": 0.068,
+    "panel": 0.00404430252,
+    "sail": 0.008,
+    "bell": 0.038887621,
+    "light": 0.0272486869,
+    "fish": 0.17669075,
+    "bird": 0.190514639,
+    "dust": 0.0182223965,
+    "flag": 0.0233405615,
+    "surface": 0.0157142327
+  }
+}
