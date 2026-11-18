@@ -1,0 +1,109 @@
+{
+  "dt_s": 0.05,
+  "runs": {
+    "idle": {
+      "samples": 201,
+      "seconds": 10
+    },
+    "dry": {
+      "samples": 65,
+      "seconds": 3.2
+    },
+    "wet": {
+      "samples": 65,
+      "seconds": 3.2
+    },
+    "cycle": {
+      "samples": 792,
+      "seconds": 39.550000000000004
+    }
+  },
+  "maxDelta": {
+    "leaf_m": 0.26050006540789056,
+    "rake_m": 0.19196939259374873,
+    "wind_mps": 0.10606176259431473,
+    "crown_rad": 0.003975532449553711,
+    "door_rad": 0.09210828620510436,
+    "dust_m": 0.034031566461175757,
+    "ripple_m": 0.009314761727688185,
+    "stack_m": 0.03447478270843421,
+    "leafRoll_rad": 0.19404375359476506,
+    "leafYaw_rad": 0.243667900599148,
+    "rakeTilt_rad": 0.05214930988885447,
+    "resistance_N": 0.33675051945606294,
+    "boat_m": 0.03286061078242186,
+    "can_rad": 0.06212221220247127,
+    "wheel_rad": 0.2330906352560529,
+    "nut_m": 0.22829099063129688,
+    "drop_m": 0.06452268582075471,
+    "tine_m": 0.02449666111046399
+  },
+  "uniformWindSteps": 0,
+  "uniformLeafSteps": 0,
+  "idle": {
+    "meanDustTravel_m": 1.04841926782208,
+    "maxBranchChange_rad": 0.03429913152584961,
+    "maxWindChange_mps": 0.43954516989868875,
+    "leavesLanded": 11
+  },
+  "mass_kg": [
+    0.002029924045316875,
+    0.007988161683548243
+  ],
+  "dry": {
+    "dryness": 0.94,
+    "friction": 0.22260000000000002,
+    "pitch_Hz": 3391.51444770224,
+    "tooth_Hz": 1100.3102043137794,
+    "meanMove_m": 1.5031403410523791,
+    "peakScrape": 0.8234685690973176,
+    "peakRustle": 0.9998766567921559,
+    "coast_m": 0.3332837189930528
+  },
+  "wet": {
+    "dryness": 0.2,
+    "friction": 0.748,
+    "pitch_Hz": 1430.849954161206,
+    "tooth_Hz": 722.9863213242727,
+    "meanMove_m": 1.3684738810737247,
+    "peakScrape": 0.9964659320609185,
+    "peakRustle": 0.9993681683955337,
+    "coast_m": 0.33149949353354724
+  },
+  "cycle": {
+    "actions": [
+      "gather",
+      "park",
+      "dive",
+      "burst",
+      "nut",
+      "wind",
+      "door",
+      "opening",
+      "pour",
+      "sail",
+      "play",
+      "return",
+      "gather"
+    ],
+    "maxToothBend_m": 0.047034395393821794,
+    "maxToothSpread_m": 0.04369052269328064,
+    "maxPile_m": 0.5931114136490615,
+    "minResistance_N": 0.7784251577539846,
+    "maxResistance_N": 3.4532670098067313,
+    "burstPeak_leaves": 162,
+    "burstHeight_m": 1.6763410402975714,
+    "nutHeight_m": 0.40164693421589714,
+    "crunch_Hz": 225,
+    "windFront_m": 7,
+    "doorCrack_rad": 0.4366210359693958,
+    "doorOpen_rad": 1.5983844643190779,
+    "maxCanTilt_rad": 0.7442988130303114,
+    "drops": 65,
+    "maxRipple_m": 0.020535914450027462,
+    "boatDisplacement_m": 0.2635067344820402,
+    "loops": 1
+  },
+  "totalSamples": 1123,
+  "transitions": 1119
+}
