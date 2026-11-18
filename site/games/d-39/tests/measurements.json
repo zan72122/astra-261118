@@ -1,0 +1,107 @@
+{
+  "sampleInterval_s": 0.05,
+  "samples": 4995,
+  "intervals": 1388,
+  "checkedWetGridIntervals": 3147,
+  "uniformChanges": 0,
+  "localChecks": 3068,
+  "uniformLocal": 0,
+  "chainPeak_deg": 25.296328,
+  "moteSpeed_m_s": 0.060997,
+  "wheelSpeed_rad_s": 2.585073,
+  "keyTravel_mm": 1.184777,
+  "continuousPlay": {
+    "seconds": 180,
+    "cycles": 5,
+    "tines": 70,
+    "spins": 6
+  },
+  "grid": [
+    39,
+    33
+  ],
+  "idle": {
+    "seconds": 10,
+    "beadsLanded": 7,
+    "peakWave_mm": 4.626293,
+    "leafDrift_mm": 49.916924,
+    "hint_s": 4.05,
+    "skyChange": -0.018694
+  },
+  "slow": {
+    "speed": 0.4,
+    "depth": 1,
+    "height": 0.016,
+    "bottomHz": 329.032258,
+    "material": "asphalt",
+    "fillBefore": 0,
+    "footCutoff": 8200,
+    "boot": 0,
+    "sampledCm": 1.482961,
+    "mass": 0.499598
+  },
+  "fast": {
+    "speed": 1.8,
+    "depth": 1,
+    "height": 0.324,
+    "bottomHz": 329.032258,
+    "material": "asphalt",
+    "fillBefore": 0,
+    "footCutoff": 8200,
+    "boot": 0,
+    "sampledCm": 32.284501,
+    "mass": 0.533199
+  },
+  "peakRatio": 20.25,
+  "lightTime": 0.8,
+  "heavyTime": 1,
+  "phases": [
+    0,
+    1,
+    2,
+    3,
+    0
+  ],
+  "endTime": 29.15,
+  "deepFreq": 140.25,
+  "notesHz": [
+    587.33,
+    659.25
+  ],
+  "minRoofHz": 1739.130435,
+  "minFootHz": 2703.196424,
+  "maxFill_cm": 1.723259,
+  "peakOutflow_L_s": 0.441101,
+  "cupAngle_deg": 59.443804,
+  "maxLamp": 0.999999,
+  "maxRain": 0.990559,
+  "boatRoll_deg": 19.272138,
+  "peakLeafSpeed_m_s": 0.183466,
+  "channelArrivals_s": [
+    15.7,
+    15.75,
+    15.9,
+    16,
+    16.15,
+    16.3,
+    16.45,
+    16.6,
+    16.8,
+    16.95,
+    17.1,
+    17.3
+  ],
+  "spills": 2,
+  "strokes": 29,
+  "maxNeighborDelta": {
+    "wave": 9.472664,
+    "boot": 90.353743,
+    "mass": 0.064816,
+    "leaf": 10.998132,
+    "boat": 21.193566,
+    "drop": 111.355387,
+    "channel": 0.039798,
+    "cup": 3.915241,
+    "lamp": 0.09359
+  }
+}
