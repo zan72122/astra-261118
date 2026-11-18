@@ -66,5 +66,9 @@
  "d-21": {
   "file": "thumbs/d-21.webp",
   "kind": "real"
+ },
+ "d-37": {
+  "file": "thumbs/placeholder-d-37.svg",
+  "kind": "placeholder"
  }
 }
