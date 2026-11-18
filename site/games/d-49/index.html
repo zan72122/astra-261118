@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#9bc5d4">
+<title>トランポリンで庭をこえる</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body,main{margin:0;width:100%;height:100%;height:100dvh;overflow:hidden;background:#a7c7cc;touch-action:none;user-select:none}
+#garden{width:100%;height:100%;display:block;outline:none}
+#hud{position:absolute;inset:0;pointer-events:none}
+#trail,#sound{background:rgba(249,247,225,.86);border:1px solid rgba(255,255,239,.87);box-shadow:0 3px 12px #31392d25,inset 0 -2px 2px #998c6f18;backdrop-filter:blur(12px);border-radius:50px;position:absolute;top:max(22px,env(safe-area-inset-top))}
+#trail{left:max(24px,env(safe-area-inset-left));padding:5px 8px;display:flex;align-items:center;gap:3px}
+.stage{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;color:#798885;transition:background .7s,color .7s}
+.stage canvas{width:24px;height:24px;opacity:.72}
+.stage.active{background:#527c87;box-shadow:inset 0 1px 3px #28475330}
+.stage.active canvas{opacity:1}
+.dot{width:3px;height:3px;background:#99a399;border-radius:100%}
+#sound{right:max(24px,env(safe-area-inset-right));width:47px;height:47px;display:grid;place-items:center;padding:0;pointer-events:auto;cursor:pointer}
+#sound canvas{width:24px;height:24px}
+#hand{position:absolute;top:0;left:0;width:43px;height:51px;transform-origin:8px 4px;opacity:0;filter:drop-shadow(1px 3px 2px #292d3150)}
+@media(max-width:520px){#trail,#sound{top:max(16px,env(safe-area-inset-top))}#trail{left:16px;padding:4px 5px}.stage{width:29px;height:29px}.stage canvas{width:21px;height:21px}#sound{right:16px;width:39px;height:39px}}
+</style>
+</head>
+<body>
+<main><canvas id="garden" aria-label="庭のトランポリン"></canvas><div id="hud"><div id="trail" aria-hidden="true"></div><button id="sound" aria-label="音を消す" aria-pressed="false"><canvas width="72" height="72"></canvas></button><canvas id="hand" width="86" height="102" aria-hidden="true"></canvas></div></main>
+<script src="vendor/three.min.js"></script><script src="sim.js"></script><script src="world.js"></script><script src="play.js"></script>
+</body></html>
