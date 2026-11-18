@@ -7,6 +7,10 @@
   "file": "thumbs/d-02.webp",
   "kind": "real"
  },
+ "d-02b": {
+  "file": "thumbs/placeholder-d-02b.svg",
+  "kind": "placeholder"
+ },
  "d-03": {
   "file": "thumbs/d-03.webp",
   "kind": "real"

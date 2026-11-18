@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#d6c6a5">
+<title>紅葉の山道</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="game" aria-label="紅葉の山道のゴーカート">
+<canvas id="view" aria-label="金の輪へ続く紅葉の山道"></canvas>
+<div id="finish" aria-hidden="true"></div>
+<button id="audio" type="button" aria-label="音を切り替える" aria-pressed="true">
+<svg viewBox="0 0 54 54" aria-hidden="true"><circle class="rim" cx="27" cy="27" r="25"/><circle cx="27" cy="27" r="21" fill="#34493f" stroke="#6d7863"/>
+<path d="M13 23h6l8-7v22l-8-7h-6z" fill="#f5e5c2"/><g fill="none" stroke="#f5e5c2" stroke-width="2.3" stroke-linecap="round" class="waves"><path d="M32 21q6 6 0 12M37 17q10 10 0 20"/></g><path class="mute" d="m32 23 8 8m0-8-8 8" fill="none" stroke="#fae0a9" stroke-width="2.5" stroke-linecap="round"/></svg>
+</button>
+<div id="trail" aria-hidden="true">
+<svg class="defs" width="0" height="0"><defs>
+<linearGradient id="enamel" x2=".15" y2="1"><stop stop-color="#f4ebcc"/><stop offset="1" stop-color="#c6af84"/></linearGradient>
+<linearGradient id="brass" x2=".7" y2="1"><stop stop-color="#f6e8bd"/><stop offset=".38" stop-color="#c3a476"/><stop offset=".64" stop-color="#f2dfb5"/><stop offset="1" stop-color="#9c825e"/></linearGradient>
+<symbol id="picLeaf" viewBox="0 0 40 40"><path d="m18.7 33 2.5-11" stroke="#865a36" stroke-width="2.2" stroke-linecap="round"/><path d="m19.7 28-4.5-4.7-5.9-.1 2-3.4-6.4-5.3 6.1.8-.5-4.7 5.1 4.3.7-10.5 4.1 4.5 4.9-7.1 1.3 10.2 5.9-1.6-2.9 6.6 5.1.6-7.4 5.2.3 3.1z" fill="#b9532f"/><path d="m19.4 28 6-18m-5 14-6-7m7 5 7-5" fill="none" stroke="#edac66" stroke-width="1.25" stroke-linecap="round"/></symbol>
+<symbol id="picWater" viewBox="0 0 40 40"><path d="m3 23 6-11 6 10 5-13 7 14z" fill="#7f8c66"/><path d="M5 29q10-5 16-1t15-1m-27 7q9-4 15-1t9-1" stroke="#719299" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M6 25q13-13 28-3m-27-2q13-12 26-3m-23 1v5m5-8v5m6-7v5m6-4v5m5-3v4" stroke="#896548" stroke-width="1.9" fill="none"/></symbol>
+<symbol id="picTunnel" viewBox="0 0 40 40"><path d="m1 27 7-15 5 5 8-13 8 13 4-5 6 16z" fill="#7a836b"/><path d="M7 31v-8a13 13 0 0 1 26 0v8z" fill="#a2987c"/><path d="M12 31v-8a8 8 0 0 1 16 0v8z" fill="#424d46"/><path d="m15 33 5-10 6 10z" fill="#c8b68c"/><path d="m15 11 2 4m7-4-1 4m-13 2 4 2m14 0 3-2" stroke="#ded2ae" stroke-width="1.4"/></symbol>
+<symbol id="picVillage" viewBox="0 0 40 40"><path d="M3 31q10-8 34-4m-34 8q20-8 34-5" stroke="#8f965e" stroke-width="2.7" fill="none"/><path d="M7 17h17v12H7z" fill="#c4a277"/><path d="m4 18 11-11 12 11z" fill="#895d45"/><path d="M13 21h5v8h-5z" fill="#6e6b55"/><path d="M24 16h10v10H24z" fill="#e0c89c"/><path d="m21 17 9-8 7 8z" fill="#737f77"/></symbol>
+<symbol id="picPeak" viewBox="0 0 40 40"><path d="m1 30 12-18 6 9L27 7l12 24z" fill="#849799"/><path d="m7 23 6-11 5 8-4-1-2 4-2-2zM20 19l7-12 7 14-5-4-2 2-2-4z" fill="#e9e9d7"/><path d="M4 33q13-4 29-1" stroke="#9ea998" stroke-width="2" fill="none"/></symbol>
+</defs></svg>
+<div class="medal active"><svg viewBox="0 0 40 40"><use href="#picLeaf"/></svg></div><i></i>
+<div class="medal"><svg viewBox="0 0 40 40"><use href="#picWater"/></svg></div><i></i>
+<div class="medal"><svg viewBox="0 0 40 40"><use href="#picTunnel"/></svg></div><i></i>
+<div class="medal"><svg viewBox="0 0 40 40"><use href="#picVillage"/></svg></div><i></i>
+<div class="medal"><svg viewBox="0 0 40 40"><use href="#picPeak"/></svg></div>
+</div>
+<div id="meter" aria-hidden="true">
+<svg viewBox="0 0 150 150"><defs><radialGradient id="dial"><stop stop-color="#4c5b4b"/><stop offset=".85" stop-color="#34483e"/><stop offset="1" stop-color="#24372f"/></radialGradient></defs>
+<circle cx="75" cy="75" r="70" fill="url(#brass)" stroke="#66593f" stroke-width="2"/>
+<circle cx="75" cy="75" r="65.5" fill="#44483a" stroke="#fff1cd" stroke-width="1.5"/>
+<circle cx="75" cy="75" r="62.5" fill="url(#dial)" stroke="#c1ad80" stroke-width="1.8"/>
+<path d="M32 106A53 53 0 1 1 118 106" fill="none" stroke="#b3b294" stroke-width="1.4"/>
+<g id="gaugeTicks"></g><path d="M108 36a50 50 0 0 1 10 10" stroke="#c58952" stroke-width="3.6" fill="none"/>
+<path d="M61 101q12-12 26-9-2 14-18 14l-5 3m1-7 15-7" fill="none" stroke="#b8b69a" stroke-width="1.5" stroke-linecap="round"/>
+<g id="needle"><path d="m70 79 3-53 2-6 2 6 3 53-5 9z" fill="#dfa14e" stroke="#f5c879" stroke-width=".8"/></g>
+<circle cx="75" cy="75" r="8.6" fill="#746749" stroke="#d3ba83" stroke-width="2"/><circle cx="75" cy="75" r="3.1" fill="#ead4a8"/>
+<circle cx="40" cy="117" r="2.1" fill="#a6a58c"/><circle cx="110" cy="117" r="2.1" fill="#a6a58c"/></svg></div>
+<button id="pedal" type="button" aria-label="押している間アクセル" aria-pressed="false">
+<svg viewBox="0 0 158 158" aria-hidden="true"><defs>
+<linearGradient id="pedalFace" x2=".7" y2="1"><stop stop-color="#e8bc74"/><stop offset=".48" stop-color="#c18f47"/><stop offset="1" stop-color="#a67739"/></linearGradient></defs>
+<circle class="pedalHalo" cx="79" cy="79" r="74" fill="none" stroke="#ffde92" stroke-width="2"/>
+<circle cx="79" cy="79" r="68" fill="url(#brass)" stroke="#756042" stroke-width="1.6"/>
+<circle cx="79" cy="79" r="62.8" fill="url(#dial)" stroke="#f6e6c0" stroke-width="1.6"/>
+<circle cx="79" cy="79" r="56.8" fill="none" stroke="#9d9f7b" stroke-width="1" stroke-dasharray="1 4"/>
+<g class="foot" transform="rotate(15 79 79)">
+<rect x="60" y="42" width="40" height="81" rx="14" fill="#273a31" stroke="#182c26" stroke-width="3"/>
+<rect x="57" y="35" width="44" height="82" rx="14" fill="url(#pedalFace)" stroke="#f2deb1" stroke-width="2.4"/>
+<g fill="none" stroke="#7e633f" stroke-width="4.6" stroke-linecap="round"><path d="M64 56 79 48l15 8m-30 12 15-8 15 8m-30 12 15-8 15 8m-30 12 15-8 15 8"/></g><g fill="none" stroke="#efd09a" stroke-width="1.4" stroke-linecap="round"><path d="m64 54 15-8 15 8m-30 12 15-8 15 8m-30 12 15-8 15 8m-30 12 15-8 15 8"/></g>
+<circle cx="79" cy="106" r="3.1" fill="#836840" stroke="#dec18b"/></g>
+<circle cx="32" cy="103" r="2.3" fill="#cbb893"/><circle cx="126" cy="55" r="2.3" fill="#cbb893"/></svg>
+<svg id="hand" viewBox="0 0 66 72" aria-hidden="true"><path d="M21 40 12 24q-3-6 1-8 4-3 8 2l11 15-9-22q-2-6 2-8 4-2 7 4l11 24-2-8q-1-5 3-6 4-1 6 4l2 8q0-4 3-5 5-1 7 5l2 9q2 9-4 18L48 68 27 60q-6-6-13-9L4 45q-4-4-1-8 3-3 8 0z" fill="#f2e6c9" stroke="#796d51" stroke-width="2.1" stroke-linejoin="round"/></svg>
+</button>
+</main>
+<script src="vendor/three.min.js"></script><script src="simulation.js"></script><script src="geometry.js"></script><script src="terrain.js"></script><script src="kart.js"></script><script src="landmarks.js"></script><script src="sound.js"></script><script src="game.js"></script>
+</body></html>
