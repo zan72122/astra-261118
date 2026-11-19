@@ -1,0 +1,89 @@
+{
+  "idle10s": {
+    "warmingMinC": 0.159758,
+    "warmingMaxC": 0.64584,
+    "wetLossMaxPP": 0.194055,
+    "moteRiseMM": 8.652284,
+    "plumeTravelMM": -0.574941
+  },
+  "slow": {
+    "contactSpanMM": 1.511818,
+    "foldMM": 1.230872,
+    "cutSections": 36,
+    "tailSet": 0.989433
+  },
+  "fast": {
+    "contactSpanMM": 3.482754,
+    "foldMM": 0.692001,
+    "cutSections": 9,
+    "tailSet": 0.989433
+  },
+  "cut": {
+    "shortLengthMM": 1.4457,
+    "shortSections": 2,
+    "tailSettledPercent": 98.94328
+  },
+  "moist": {
+    "dry": {
+      "peakMM": 8.169404,
+      "extruded": 0.284209,
+      "viscosity": 2.037599
+    },
+    "wet": {
+      "peakMM": 11.289635,
+      "extruded": 0.415763,
+      "viscosity": 1.392508
+    }
+  },
+  "mass": {
+    "normalRadiusMM": 36.4,
+    "largeRadiusMM": 39.210711,
+    "normalCellC": 13.734868,
+    "largeCellC": 13.671906
+  },
+  "bare": {
+    "freshAfterS": 11.6,
+    "turnDegrees": 180.524579,
+    "windowMM": 0,
+    "coatedMM": 7.746777,
+    "portionMM": 0
+  },
+  "layered": {
+    "freshAfterS": 11.6,
+    "turnDegrees": 361.168665,
+    "windowMM": 0,
+    "coatedMM": 7.746777,
+    "portionMM": 6.575596
+  },
+  "opening": {
+    "handlePeakDeg": 11.231436,
+    "hintAtS": 4.05,
+    "seatedAtS": 0.75,
+    "fallMM": 50
+  },
+  "intervals": 1980,
+  "batchTransitions": 2,
+  "uniformIntervals": 0,
+  "maxPer50ms": {
+    "temperatureC": 0.003451,
+    "moisturePercentagePoints": 0.001074,
+    "heightMM": 0.453773,
+    "creamFallMM": 7.954167,
+    "turnDegrees": 14.25923,
+    "handleDegrees": 4.351611
+  },
+  "stages": [
+    "scoop",
+    "drop",
+    "align",
+    "pipe",
+    "rim",
+    "turning",
+    "decorate",
+    "crown",
+    "tray",
+    "serving",
+    "taste",
+    "refill"
+  ]
+}

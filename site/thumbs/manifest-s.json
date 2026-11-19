@@ -6,5 +6,9 @@
  "s-12": {
   "file": "thumbs/placeholder-s-12.svg",
   "kind": "placeholder"
+ },
+ "s-13": {
+  "file": "thumbs/placeholder-s-13.svg",
+  "kind": "placeholder"
  }
 }
