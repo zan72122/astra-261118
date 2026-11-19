@@ -1,0 +1,79 @@
+{
+  "interval_s": 0.05,
+  "idle10s": {
+    "stalkChange_deg": 15.47513,
+    "waterChange_mm": 64.244,
+    "dustVisibleTravel_m": 2.458511
+  },
+  "departure": {
+    "topSpeed_m_s": 8,
+    "acceleration_m_s2": 1.5,
+    "firstRecordedFullSpeed_s": 5.35,
+    "townArrival_s": 60.45
+  },
+  "switch": {
+    "time_s": 0.3,
+    "bladeTravel_mm": [
+      122,
+      95
+    ],
+    "routeSeparation_m": 9.6
+  },
+  "crossing": {
+    "maximumGate_deg": 85.94342,
+    "minimumCarSpeed_m_s": 0,
+    "carStopped_s": 4.2,
+    "relayChanges": 16,
+    "relayInterval_s": 0.65
+  },
+  "bridge": {
+    "bridgeTransit_s": 6.4,
+    "tunnelTransit_s": 8.3,
+    "waterDifference_mm": 90.61064
+  },
+  "freight": {
+    "approach_m": 32.45,
+    "shunt_s": 19.65,
+    "bufferPeak_mm": 8.345046,
+    "loadedTopSpeed_m_s": 5.9,
+    "loadedAccel_m_s2": 0.78,
+    "suspensionPeak_mm": 3.239162
+  },
+  "sunset": {
+    "altitude_deg": -2.823787,
+    "windowPower_percent": 99.947236
+  },
+  "ferry": {
+    "travel_m": 20.494792,
+    "topSpeed_m_s": 1.25,
+    "cycle_s": 173.05
+  },
+  "maximumAdjacentDifferences": {
+    "travel_m": 0.4,
+    "speed_m_s": 0.075,
+    "lateral_m": 0.170114,
+    "wagon_m": 0.295,
+    "car_m": 0.14,
+    "car_m_s": 0.08341,
+    "ferry_m": 0.0625,
+    "wagon_speed_m_s": 0.236204,
+    "blade_m": 0.02937,
+    "lever_rad": 0.250166,
+    "gate_rad": 0.051852,
+    "guide_fraction": 0.042323,
+    "button_m": 0.024679,
+    "coupler_m": 0.003923,
+    "sun_rad": 0.001209,
+    "filament_fraction": 0.03544,
+    "signal_fraction": 0.536631,
+    "stalk_rad": 0.028487,
+    "water_m": 0.006544,
+    "suspension_m": 0.002129,
+    "dust_m": 0.02158
+  },
+  "minimumSpreadAmongCells": {
+    "stalk_rad": 0.002784,
+    "water_m": 0.000624
+  },
+  "records": 4895
+}
