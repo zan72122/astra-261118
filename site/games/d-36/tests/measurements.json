@@ -1,0 +1,226 @@
+{
+  "sample_seconds": 0.05,
+  "samples": 3074,
+  "synthesizer_frequencies_Hz": [
+    [
+      1346,
+      3674.58,
+      5626.28,
+      8277.9,
+      1351.384
+    ],
+    [
+      882,
+      2099.16,
+      3483.9,
+      4780.44,
+      6861.96
+    ],
+    [
+      1062,
+      1741.6799999999998,
+      2931.12,
+      4747.139999999999
+    ]
+  ],
+  "checks": {
+    "idle": {
+      "newBeads": 6,
+      "maxAir": 0.36190797616043235,
+      "maxBellDeg": 0.04163459268355179,
+      "stripDeg": 0.0662140151779597,
+      "fabricCm": 0.49399870052344097,
+      "curtainCm": 0.4773620543198469,
+      "leafDeg": 3.405457238155848,
+      "waterMm": 5.013304597252467,
+      "hoistCm": 0,
+      "waterTravelCm": 0,
+      "flightHeightM": 0,
+      "flightRangeM": 0,
+      "sunMinDeg": 36.66929888837269,
+      "turns": 0,
+      "rpm": 1.278241599829054,
+      "endSeconds": 10.000000000000073,
+      "events": {
+        "drop": 5
+      },
+      "hits": [
+        0,
+        0,
+        0
+      ],
+      "firstSound": null,
+      "ringAt6": 0,
+      "ringAt7": 0,
+      "ringAt10": 0,
+      "windAt10": 0.23603770459574921,
+      "firstMoteTravelCm": 68.24938286655487,
+      "impacts": 5
+    },
+    "gentle": {
+      "newBeads": 6,
+      "maxAir": 0.870860422166655,
+      "maxBellDeg": 0.5626082411794565,
+      "stripDeg": 0.8381844377834535,
+      "fabricCm": 0.49430753478846784,
+      "curtainCm": 0.478117632607168,
+      "leafDeg": 3.405457238155848,
+      "waterMm": 5.0106605933235615,
+      "hoistCm": 0,
+      "waterTravelCm": 0,
+      "flightHeightM": 0,
+      "flightRangeM": 0,
+      "sunMinDeg": 36.66929888837269,
+      "turns": 0,
+      "rpm": 1.2834337889842715,
+      "endSeconds": 10.000000000000073,
+      "events": {
+        "drop": 5
+      },
+      "hits": [
+        0,
+        0,
+        0
+      ],
+      "firstSound": null,
+      "ringAt6": 0,
+      "ringAt7": 0,
+      "ringAt10": 0,
+      "windAt10": 0.17394759915962307,
+      "firstMoteTravelCm": 104.45153229089152,
+      "impacts": 5
+    },
+    "strong": {
+      "newBeads": 6,
+      "maxAir": 4.816444457152857,
+      "maxBellDeg": 10.45351478702972,
+      "stripDeg": 17.108909161647603,
+      "fabricCm": 0.49625813387061785,
+      "curtainCm": 0.48283980888110595,
+      "leafDeg": 3.405457238155848,
+      "waterMm": 4.991293620825603,
+      "hoistCm": 0,
+      "waterTravelCm": 0,
+      "flightHeightM": 0,
+      "flightRangeM": 0,
+      "sunMinDeg": 36.66929888837269,
+      "turns": 0,
+      "rpm": 1.3203955246464623,
+      "endSeconds": 10.000000000000073,
+      "events": {
+        "chime": 28,
+        "drop": 5
+      },
+      "hits": [
+        28,
+        0,
+        0
+      ],
+      "firstSound": 0.4,
+      "ringAt6": 0.8048203853608393,
+      "ringAt7": 0.7815478729373685,
+      "ringAt10": 0.12897688641810334,
+      "windAt10": 0.24633855632199453,
+      "firstMoteTravelCm": 322.24450017387056,
+      "impacts": 5
+    },
+    "cycle": {
+      "newBeads": 73,
+      "maxAir": 4.090488083651261,
+      "maxBellDeg": 7.7603896931285234,
+      "stripDeg": 11.563523451034781,
+      "fabricCm": 21.078516530905095,
+      "curtainCm": 14.751622064094555,
+      "leafDeg": 92.81916281119337,
+      "waterMm": 28.11235035141206,
+      "hoistCm": 30.948102112789034,
+      "waterTravelCm": 41.54791379917545,
+      "flightHeightM": 2.4782136595202338,
+      "flightRangeM": 5.189381008716543,
+      "sunMinDeg": -6.592351682451706,
+      "turns": 15.927258375480477,
+      "rpm": 94.16632650799306,
+      "endSeconds": 123.50000000004435,
+      "events": {
+        "chime": 168,
+        "drop": 73,
+        "stage": 7,
+        "firework": 4,
+        "click": 15,
+        "launch": 1
+      },
+      "hits": [
+        79,
+        41,
+        48
+      ],
+      "firstSound": 0.45,
+      "ringAt6": 0.8686238768035505,
+      "ringAt7": 0.8095573957713696,
+      "ringAt10": null,
+      "windAt10": null,
+      "firstMoteTravelCm": 1509.6407020978386,
+      "impacts": 72,
+      "chordHits": [
+        50,
+        40,
+        47
+      ],
+      "sequence": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        0
+      ],
+      "transitions": [
+        8.8,
+        25.9,
+        44.45,
+        62.35,
+        76.7,
+        87.95,
+        123.5
+      ],
+      "fireworkDelaySeconds": [
+        1.25,
+        1.0500000000000043,
+        0.8500000000000014,
+        0.8500000000000014
+      ]
+    }
+  },
+  "largest_adjacent_steps": {
+    "wind_m_s": 0.5430063669621732,
+    "bell_rad": 0.04283271436808532,
+    "tongue_rad": 0.45003640061818484,
+    "tag_rad": 0.06837067025967908,
+    "strip_rad": 0.023282617426841984,
+    "ring_amp": 1,
+    "cloth_m": 0.028913811082638956,
+    "wet_fraction": 0.001099153479606152,
+    "leaf_rad": 0.13681260310001297,
+    "water_m": 0.006997137559960432,
+    "petal_m": 0.0016478965952928804,
+    "wheel_rad": 0.4930408807149007,
+    "hoist_m": 0.0017500000000001403,
+    "cam_m": 0.023617591584614767,
+    "sun_rad": 0.0025912614115889965,
+    "plane_m": 0.11365253466758021,
+    "pollen_x_m": 0.023245884546403417,
+    "pollen_y_m": 0.0008999682149579691,
+    "plane_step_m": 0.1448352953116811,
+    "drop_step_m": 0.06744374999999997,
+    "spark_step_m": 0.09777919065028425
+  },
+  "moving_samples": {
+    "wind_m_s": 3070,
+    "strip_rad": 3070,
+    "cloth_m": 3070,
+    "leaf_rad": 3070,
+    "water_m": 3070
+  },
+  "identical_moving_samples": {}
+}

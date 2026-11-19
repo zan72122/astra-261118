@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#acbdb4">
+<title>ふうりんのえんがわ</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body,main{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none;touch-action:none}
+body{background:#b7c8bd}
+main{position:relative;height:100dvh;isolation:isolate;user-select:none;-webkit-user-select:none}
+canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}
+#sound{position:absolute;right:max(19px,env(safe-area-inset-right));top:max(18px,env(safe-area-inset-top));display:grid;place-items:center;width:43px;height:43px;padding:0;color:#f9f5e4;border-radius:50%;border:1px solid rgba(255,251,231,.57);background:rgba(51,62,55,.31);box-shadow:0 2px 10px #25362a19,inset 0 0 0 3px #f6f1dc0b;backdrop-filter:blur(8px);cursor:pointer}
+#sound svg{width:22px;height:22px}#sound .off,#sound[aria-pressed=true] .on{display:none}#sound[aria-pressed=true] .off{display:block}
+#chapters{position:absolute;bottom:max(20px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:7px;height:26px;padding:0 13px;border:1px solid #fbf3df4d;border-radius:20px;background:#3d423740;backdrop-filter:blur(7px);pointer-events:none}
+#chapters i{width:4px;height:4px;background:#fff9e893;border-radius:50%;transition:all 1s}
+#chapters i.past{background:#fff9e8}#chapters i.now{height:5px;width:15px;border-radius:4px;background:#fff3ce;box-shadow:0 0 5px #ffe9b177}
+#gesture{position:absolute;width:65px;height:72px;top:0;left:0;pointer-events:none;opacity:0;filter:drop-shadow(0 1px 3px #454a3b52);will-change:transform,opacity}
+#trail{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+</style>
+</head>
+<body><main>
+<canvas id="garden" aria-label="縁側の風鈴と夏の庭"></canvas>
+<svg id="trail" aria-hidden="true"><g fill="none" stroke="#fff9df" stroke-linecap="round"><path id="streak" stroke-width="1.5"/><path id="wisp" stroke-width="1"/></g></svg>
+<svg id="gesture" viewBox="0 0 65 72" aria-hidden="true">
+<g transform="rotate(-19 24 24)" stroke-linejoin="round"><path d="M19 40 14 21c-1-5 5-7 7-2l4 11-2-21c-.5-6 7-7 8-1l2 19 2-6c2-4 7-3 7 1 2-4 7-3 8 1 3-2 7 0 7 4l-1 16c0 7-4 10-5 16l-22 1c-1-6-9-11-14-16-4-4-9-8-6-12 3-3 7 1 10 8Z" fill="#fff7df" fill-opacity=".89" stroke="#817c64" stroke-opacity=".65" stroke-width="1.3"/></g></svg>
+<button id="sound" type="button" aria-label="音を切り替える" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h3l4.5-4v14L7 15H4z" fill="currentColor" stroke-width="1"/><g class="on"><path d="M15 8.5a5 5 0 0 1 0 7M18 5.7a9 9 0 0 1 0 12.6"/></g><path class="off" d="m15.5 9 5 6m0-6-5 6"/></svg></button>
+<div id="chapters" aria-hidden="true"><i class="now"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</main>
+<script src="vendor/three.min.js"></script>
+<script src="simulation.js"></script>
+<script src="art.js"></script>
+<script src="garden.js"></script>
+<script src="subjects.js"></script>
+<script src="toys.js"></script>
+<script src="audio.js"></script>
+<script src="game.js"></script>
+</body></html>
