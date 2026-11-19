@@ -1,0 +1,18 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body,main{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none;background:#c5d4d2}
+main{position:relative;isolation:isolate;touch-action:none;user-select:none;-webkit-user-select:none}
+#world,#finish{position:absolute;inset:0;width:100%;height:100%;display:block}
+#finish{pointer-events:none;background:radial-gradient(ellipse at 49% 42%,transparent 53%,rgba(36,40,25,.12) 99%);box-shadow:inset 0 0 90px #d2b48a09}
+#journey,#sound{position:absolute;top:max(25px,env(safe-area-inset-top));background:linear-gradient(135deg,#354e49ef,#273e39ed);border:1px solid #fff4d6aa;box-shadow:0 2px 5px #24332438,inset 0 0 0 3px #283e393a,inset 0 0 0 4px #f6dfaf32;backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+#journey{left:max(27px,env(safe-area-inset-left));display:flex;align-items:center;justify-content:space-between;width:190px;height:49px;padding:0 9px;border-radius:28px;pointer-events:none}
+.journey-line{position:absolute;inset:0;fill:none;stroke:#d6c99c;stroke-width:1;stroke-dasharray:1 4;opacity:.8}
+.stop{display:grid;place-items:center;border-radius:50%;width:32px;height:32px;color:#e0ddbc;background:#364d44}
+.stop svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-linejoin:round;stroke-linecap:round;stroke-width:1.65}
+.stop.selected{background:#e6daa8;color:#395446;box-shadow:0 0 0 2px #33473d,0 0 0 3px #c7b783}
+.stop.done{color:#eada8e}
+#sound{right:max(27px,env(safe-area-inset-right));display:grid;place-items:center;width:47px;height:47px;border-radius:50%;color:#f5edd2;cursor:pointer;padding:10px}
+#sound svg{width:100%;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.speaker{fill:currentColor;stroke-width:1}.off,[aria-pressed="false"] .on{display:none}[aria-pressed="false"] .off{display:block}
+#hand{position:absolute;left:0;top:0;pointer-events:none;width:37px;height:43px;opacity:0;transform-origin:20% 0%;filter:drop-shadow(0 2px 2px #16272277)}
+#hand svg{width:100%;height:100%;stroke:#657264;stroke-width:2.3;fill:#fff7db;stroke-linejoin:round}
+@media(max-width:600px){#journey,#sound{top:max(16px,env(safe-area-inset-top))}#journey{left:15px;width:156px;height:44px}.stop{width:27px;height:27px}.stop svg{width:18px;height:18px}#sound{right:15px;width:44px;height:44px}}
