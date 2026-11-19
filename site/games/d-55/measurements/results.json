@@ -1,0 +1,135 @@
+{
+  "idle": {
+    "guideAt": 4.05,
+    "bendDegrees": [
+      -1.106,
+      1.858
+    ],
+    "pollenMetres": 3.5,
+    "wheelDegrees": 281.73
+  },
+  "dry": {
+    "testedFreshCells": 111,
+    "dryRangeSeconds": [
+      10.65,
+      25.6
+    ],
+    "cell": 564,
+    "driedAfterSeconds": 25.15,
+    "samples": [
+      {
+        "seconds": 0,
+        "filmMm": 0.24462,
+        "water": 0.94738,
+        "roughnessBase": 0.19789
+      },
+      {
+        "seconds": 10,
+        "filmMm": 0.24462,
+        "water": 0.57099,
+        "roughnessBase": 0.39737
+      },
+      {
+        "seconds": 20,
+        "filmMm": 0.24462,
+        "water": 0.19431,
+        "roughnessBase": 0.59702
+      },
+      {
+        "seconds": 40,
+        "filmMm": 0.24462,
+        "water": 0,
+        "roughnessBase": 0.7
+      }
+    ]
+  },
+  "cycle": {
+    "events": [
+      [
+        "fence",
+        0
+      ],
+      [
+        "glow",
+        31.75
+      ],
+      [
+        "latch",
+        34.4
+      ],
+      [
+        "passage",
+        39.15
+      ],
+      [
+        "water",
+        44.65
+      ],
+      [
+        "bloom",
+        50.35
+      ],
+      [
+        "bench",
+        53.95
+      ],
+      [
+        "touch",
+        78.65
+      ],
+      [
+        "dusk",
+        107.7
+      ],
+      [
+        "return",
+        129.7
+      ],
+      [
+        "fence",
+        139.7
+      ]
+    ],
+    "durationSeconds": 139.7,
+    "waterDeliveredMl": 265.9,
+    "wetRub": {
+      "drag": 0.006404380522490912,
+      "water": 0.9482583287057436,
+      "impulseMmPerSecond": 1.665138935847637
+    },
+    "dryRub": {
+      "drag": 0.03301560282567517,
+      "water": 0,
+      "impulseMmPerSecond": 8.584056734675542
+    },
+    "shadowMPerMetre": [
+      1.355,
+      3.39
+    ]
+  },
+  "peaks": {
+    "filmMm": 0.29636,
+    "gateDegrees": 88.16097,
+    "canDegrees": 55.51029,
+    "drops": 14,
+    "flowerSoilMl": 290.4
+  },
+  "adjacent": {
+    "dtSeconds": 0.05,
+    "frames": 3845,
+    "comparisons": 3841,
+    "equalChanging": 0,
+    "partialPaint": 375,
+    "filmMm": 0.055452,
+    "water": 0.261239,
+    "bendRad": 0.005339,
+    "gateRad": 0.06734,
+    "rollerUV": 0.045,
+    "canRad": 0.093088,
+    "petals": 0.047223,
+    "evening": 0.034313,
+    "butterflyM": 0.056,
+    "wingRad": 0.662439,
+    "pollenM": 0.029407
+  }
+}

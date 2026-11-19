@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+<meta name="robots" content="noindex,nofollow">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#d6debc" />
+    <title>ペンキで塀をぬる</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="garden" aria-label="午後の庭"></canvas>
+    <div id="finish"></div>
+    <div class="hud">
+      <div id="chapters" role="img" aria-label="庭の四つの場面">
+        <canvas id="chapterArt" width="424" height="108"></canvas>
+      </div>
+      <button id="audio" class="round" aria-label="音の切り替え" aria-pressed="true">
+        <canvas width="64" height="64"></canvas>
+      </button>
+    </div>
+    <div id="palette" role="group" aria-label="ペンキの色">
+      <canvas id="paletteArt" width="70" height="70"></canvas><i></i>
+      <button
+        class="swatch active"
+        style="--tone: #a7c59d; --rim: #749270"
+        aria-label="淡い緑"
+        aria-pressed="true"
+      ></button>
+      <button
+        class="swatch"
+        style="--tone: #e5af99; --rim: #b98674"
+        aria-label="あんず色"
+        aria-pressed="false"
+      ></button>
+      <button
+        class="swatch"
+        style="--tone: #9fbfc9; --rim: #7599a5"
+        aria-label="空色"
+        aria-pressed="false"
+      ></button>
+      <button
+        class="swatch"
+        style="--tone: #e5cc91; --rim: #b8a06d"
+        aria-label="たまご色"
+        aria-pressed="false"
+      ></button>
+    </div>
+    <canvas id="guide" width="108" height="134" aria-hidden="true"></canvas>
+    <script src="vendor/three.min.js"></script>
+    <script src="simulation.js"></script>
+    <script src="art.js"></script>
+    <script src="garden.js"></script>
+    <script src="play.js"></script>
+  </body>
+</html>
