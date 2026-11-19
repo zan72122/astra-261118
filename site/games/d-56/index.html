@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#bdc9ac">
+<title>スプリンクラーの庭</title>
+<link rel="stylesheet" href="garden.css">
+</head>
+<body>
+<main id="garden" aria-label="スプリンクラーの庭"><canvas id="view" aria-label="夏の庭"></canvas>
+<div class="album" aria-label="庭の思い出">
+  <div class="stamp active"><svg viewBox="0 0 64 53" aria-hidden="true">
+    <path fill="#b4ccbe" d="M5 3h54v45H5z"/><path fill="#d4dbb5" d="M5 38q15-13 28-4t26-2v16H5z"/>
+    <g fill="none" stroke-width="3.5"><path stroke="#c77a60" d="M12 35a20 22 0 0 1 40 0"/><path stroke="#eab978" d="M15.5 35a16.5 18.5 0 0 1 33 0"/><path stroke="#ede4a4" d="M19 35a13 15 0 0 1 26 0"/><path stroke="#739d90" d="M22.5 35a9.5 11.5 0 0 1 19 0"/></g>
+    <path fill="#fff6de" d="M7 36q-2-5 3-6 2-6 7-3 4-2 5 3 6 1 4 6zm34-1q-1-4 3-5 2-4 5-2 4-2 5 2 5 0 4 5z"/>
+    <g fill="#f9efcd"><circle cx="13" cy="12" r="1.3"/><circle cx="51" cy="9" r="1.4"/></g>
+  </svg><i></i></div>
+  <div class="stamp"><svg viewBox="0 0 64 53" aria-hidden="true"><path fill="#d4c8a6" d="M5 3h54v45H5z"/><ellipse cx="32" cy="42" rx="20" ry="3" fill="#939476"/><path fill="#ac6f50" d="m18 24 4 15q10 5 21-1l4-16z"/><path fill="#ca8b63" d="m19 25 4 12q4 3 8 2l-1-15z"/><path fill="#d39369" d="M16 20q17-7 33 0v7q-18 5-33-1z"/><ellipse cx="32.5" cy="20.5" rx="16.5" ry="4" fill="#875d45"/><ellipse cx="32.5" cy="21" rx="13.7" ry="2.2" fill="#a2c8ba"/><path d="M30 19q-7-3 2-13 5 9-2 13" fill="#e5eee1"/><path d="M46 22v9q2 4 4 0" fill="none" stroke="#c6ddd0" stroke-width="2"/></svg><i></i></div>
+  <div class="stamp"><svg viewBox="0 0 64 53" aria-hidden="true"><path fill="#c2ccb9" d="M5 3h54v45H5z"/><path fill="#a5b59b" d="M5 36q27-7 54 0v12H5z"/><g fill="#d9dfc7" stroke="#586258" stroke-width="2"><circle cx="17" cy="34" r="9"/><circle cx="47" cy="34" r="9"/></g><g fill="none" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="m17 34 7-15 6 15H17l22-13m-9 13 11-17" stroke="#ab5748"/><path d="m47 34-7-20 5-3m-22 9-2-5" stroke="#626957"/><path d="M18 15h9" stroke="#685249"/></g><path d="m42 15 12-1-2 8-7 1" fill="#b38c59"/></svg><i></i></div>
+  <div class="stamp"><svg viewBox="0 0 64 53" aria-hidden="true"><path fill="#d8bda1" d="M5 3h54v45H5z"/><circle cx="33" cy="24" r="9" fill="#f4d790"/><g stroke="#ead4ae" stroke-width="1.4"><path d="M33 9V6m11 9 3-2M21 15l-3-2M15 23h-4m38 0h4"/></g><path d="M5 32q9-7 22-2t32-6v23H5z" fill="#9da88d"/><path d="M5 37q18 2 28-5t26 2v14H5z" fill="#768b78"/><path fill="#536c61" d="m12 45-2-8 4 5 2-12 1 12 4-4-3 7zm37 0-2-7 3 4 3-8-1 11z"/></svg><i></i></div>
+</div>
+<button type="button" id="sound" aria-label="音の切り替え" aria-pressed="true"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M7.5 12.5h4l6-5v17l-6-5h-4z" fill="currentColor"/><g fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"><path class="wave" d="M21 11.6q3.7 4.4 0 8.8m3-11.9q6.2 7.4 0 15"/><path class="mute" d="m21 13 6 6m0-6-6 6"/></g></svg></button>
+<div id="hint" aria-hidden="true"><svg viewBox="0 0 54 62"><path fill="#fff9e9" stroke="#83775a" stroke-width="1.7" stroke-linejoin="round" d="M23 51c-5-2-7-6-10-11L6 29c-3-5 2-8 6-5l7 8-7-24c-1.5-5 5-7 7-2l6 16-1-5c-1-4 5-6 7-2l3 6-1-4c0-4 5-4 7 0l2 5c1-3 5-3 6 1l2 9c1 7-2 12-4 17l-1 4-18 5z"/></svg></div>
+</main>
+<script src="vendor/three.min.js"></script>
+<script src="simulation.js"></script>
+<script src="craft.js"></script>
+<script src="objects.js"></script>
+<script src="landscape.js"></script>
+<script src="garden.js"></script>
+</body></html>

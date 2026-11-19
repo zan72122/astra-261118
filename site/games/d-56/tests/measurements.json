@@ -1,0 +1,333 @@
+{
+  "sampleInterval_s": 0.05,
+  "grid": [
+    40,
+    34
+  ],
+  "runs": {
+    "idle": {
+      "seconds": 10,
+      "flow_L_s": 0.105,
+      "rpm": 6.5588606,
+      "soil_mL": 606.58127,
+      "wetCells": 209,
+      "dew_mL": 149.06224,
+      "rainbow": 0.26365492,
+      "apex_m": 1.3267485,
+      "moteTravel_m": 0.67735966,
+      "peakPot_L": 0,
+      "peakLipFilm_mL": 0,
+      "peakWetLips": 0,
+      "peakDew_mL": 149.06224,
+      "peakWheel_rad_s": 0,
+      "initialMud_g": 4.0975968,
+      "guideAt_s": 4.05,
+      "maxBallisticError_m": 2.220446e-16,
+      "ballisticPairs": 27827,
+      "stageTimes": [
+        0
+      ],
+      "stageValues": [
+        {
+          "phase": 0,
+          "time_s": 0,
+          "flow_L_s": 0.105,
+          "rpm": 1.3,
+          "pot_L": 0,
+          "overflow_L": 0,
+          "mud_g": 4.0975968,
+          "dew_mL": 0,
+          "leafHeight_m": 0.15
+        }
+      ]
+    },
+    "low": {
+      "seconds": 10,
+      "flow_L_s": 0.12,
+      "rpm": 7.8511008,
+      "soil_mL": 684.83176,
+      "wetCells": 233,
+      "dew_mL": 167.46217,
+      "rainbow": 0.35961395,
+      "apex_m": 1.3327722,
+      "moteTravel_m": 0.67735966,
+      "peakPot_L": 0.010653333,
+      "peakLipFilm_mL": 0,
+      "peakWetLips": 0,
+      "peakDew_mL": 167.46217,
+      "peakWheel_rad_s": 0,
+      "initialMud_g": 4.0975968,
+      "guideAt_s": 4.05,
+      "maxBallisticError_m": 2.220446e-16,
+      "ballisticPairs": 27902,
+      "stageTimes": [
+        0
+      ],
+      "stageValues": [
+        {
+          "phase": 0,
+          "time_s": 0,
+          "flow_L_s": 0.105,
+          "rpm": 1.3,
+          "pot_L": 0,
+          "overflow_L": 0,
+          "mud_g": 4.0975968,
+          "dew_mL": 0,
+          "leafHeight_m": 0.15
+        }
+      ]
+    },
+    "high": {
+      "seconds": 10,
+      "flow_L_s": 0.36,
+      "rpm": 34.535162,
+      "soil_mL": 1757.438,
+      "wetCells": 278,
+      "dew_mL": 438.2191,
+      "rainbow": 0.99482907,
+      "apex_m": 1.4050895,
+      "moteTravel_m": 0.67735966,
+      "peakPot_L": 0,
+      "peakLipFilm_mL": 0,
+      "peakWetLips": 0,
+      "peakDew_mL": 438.2191,
+      "peakWheel_rad_s": 0.0349652,
+      "initialMud_g": 4.0975968,
+      "guideAt_s": 4.05,
+      "maxBallisticError_m": 2.220446e-16,
+      "ballisticPairs": 29101,
+      "stageTimes": [
+        0
+      ],
+      "stageValues": [
+        {
+          "phase": 0,
+          "time_s": 0,
+          "flow_L_s": 0.105,
+          "rpm": 1.3,
+          "pot_L": 0,
+          "overflow_L": 0,
+          "mud_g": 4.0975968,
+          "dew_mL": 0,
+          "leafHeight_m": 0.15
+        }
+      ]
+    },
+    "landscape": {
+      "seconds": 151.1,
+      "flow_L_s": 0,
+      "rpm": 0,
+      "soil_mL": 0.090288421,
+      "wetCells": 75,
+      "dew_mL": 0.0067962213,
+      "rainbow": 2.6515289e-11,
+      "apex_m": 1.4052045,
+      "moteTravel_m": 0,
+      "peakPot_L": 6.5358258,
+      "peakLipFilm_mL": 18.038189,
+      "peakWetLips": 10,
+      "peakDew_mL": 1538.116,
+      "peakWheel_rad_s": 1.0122078,
+      "initialMud_g": 4.0975968,
+      "guideAt_s": 4.05,
+      "maxBallisticError_m": 2.220446e-16,
+      "ballisticPairs": 320288,
+      "stageTimes": [
+        0,
+        17.15,
+        39.95,
+        100.5,
+        129.1,
+        151.1
+      ],
+      "stageValues": [
+        {
+          "phase": 0,
+          "time_s": 0,
+          "flow_L_s": 0.105,
+          "rpm": 1.3,
+          "pot_L": 0,
+          "overflow_L": 0,
+          "mud_g": 4.0975968,
+          "dew_mL": 0,
+          "leafHeight_m": 0.15
+        },
+        {
+          "phase": 1,
+          "time_s": 17.15,
+          "flow_L_s": 0.36,
+          "rpm": 34.694084,
+          "pot_L": 0,
+          "overflow_L": 0,
+          "mud_g": 4.0701906,
+          "dew_mL": 783.27051,
+          "leafHeight_m": 0.15
+        },
+        {
+          "phase": 2,
+          "time_s": 39.95,
+          "flow_L_s": 0.36,
+          "rpm": 0.33378493,
+          "pot_L": 6.5324834,
+          "overflow_L": 0.92923663,
+          "mud_g": 4.065786,
+          "dew_mL": 876.79023,
+          "leafHeight_m": 0.7900521
+        },
+        {
+          "phase": 3,
+          "time_s": 100.5,
+          "flow_L_s": 0.35999992,
+          "rpm": 0.33378483,
+          "pot_L": 6.4,
+          "overflow_L": 1.29108,
+          "mud_g": 0.050299753,
+          "dew_mL": 1189.5133,
+          "leafHeight_m": 0.79
+        },
+        {
+          "phase": 4,
+          "time_s": 129.1,
+          "flow_L_s": 0,
+          "rpm": 0,
+          "pot_L": 6.4,
+          "overflow_L": 1.3117481,
+          "mud_g": 0.026783685,
+          "dew_mL": 1434.9191,
+          "leafHeight_m": 0.79
+        },
+        {
+          "phase": 0,
+          "time_s": 151.1,
+          "flow_L_s": 0,
+          "rpm": 0,
+          "pot_L": 0,
+          "overflow_L": 1.3117481,
+          "mud_g": 4.0294542,
+          "dew_mL": 0.0067962213,
+          "leafHeight_m": 0.14999976
+        }
+      ]
+    },
+    "portrait": {
+      "seconds": 132.5,
+      "flow_L_s": 0.000025266963,
+      "rpm": 8.2395779e-7,
+      "soil_mL": 0.045770627,
+      "wetCells": 68,
+      "dew_mL": 0.0044891843,
+      "rainbow": 2.6229591e-11,
+      "apex_m": 1.4052378,
+      "moteTravel_m": 0,
+      "peakPot_L": 6.5366431,
+      "peakLipFilm_mL": 18.048063,
+      "peakWetLips": 10,
+      "peakDew_mL": 1525.0085,
+      "peakWheel_rad_s": 1.3479596,
+      "initialMud_g": 4.0975968,
+      "guideAt_s": 4.05,
+      "maxBallisticError_m": 2.220446e-16,
+      "ballisticPairs": 266047,
+      "stageTimes": [
+        0,
+        17.15,
+        40.1,
+        81.9,
+        110.5,
+        132.5
+      ],
+      "stageValues": [
+        {
+          "phase": 0,
+          "time_s": 0,
+          "flow_L_s": 0.105,
+          "rpm": 1.3,
+          "pot_L": 0,
+          "overflow_L": 0,
+          "mud_g": 4.0975968,
+          "dew_mL": 0,
+          "leafHeight_m": 0.15
+        },
+        {
+          "phase": 1,
+          "time_s": 17.15,
+          "flow_L_s": 0.36,
+          "rpm": 34.694084,
+          "pot_L": 0.011747651,
+          "overflow_L": 0,
+          "mud_g": 4.0134016,
+          "dew_mL": 722.59494,
+          "leafHeight_m": 0.15117477
+        },
+        {
+          "phase": 2,
+          "time_s": 40.1,
+          "flow_L_s": 0.36,
+          "rpm": 0.33378493,
+          "pot_L": 6.5366431,
+          "overflow_L": 0.92742458,
+          "mud_g": 4.0003118,
+          "dew_mL": 819.97388,
+          "leafHeight_m": 0.79005396
+        },
+        {
+          "phase": 3,
+          "time_s": 81.9,
+          "flow_L_s": 0.35999961,
+          "rpm": 0.66435823,
+          "pot_L": 6.4,
+          "overflow_L": 1.2859077,
+          "mud_g": 0.044162612,
+          "dew_mL": 1224.7344,
+          "leafHeight_m": 0.79
+        },
+        {
+          "phase": 4,
+          "time_s": 110.5,
+          "flow_L_s": 0,
+          "rpm": 0,
+          "pot_L": 6.3933333,
+          "overflow_L": 1.2911714,
+          "mud_g": 0.020297803,
+          "dew_mL": 1416.6502,
+          "leafHeight_m": 0.78999759
+        },
+        {
+          "phase": 0,
+          "time_s": 132.5,
+          "flow_L_s": 0.000025266963,
+          "rpm": 8.2395779e-7,
+          "pot_L": 0,
+          "overflow_L": 1.2911714,
+          "mud_g": 3.9722859,
+          "dew_mL": 0.0044891843,
+          "leafHeight_m": 0.1499997
+        }
+      ]
+    }
+  },
+  "maxDelta": {
+    "cellSoil_mL": 5.9977631,
+    "cellFilm_mL": 5.4140042,
+    "cellDew_mL": 1.0602229,
+    "cellBend_rad": 0.0081906713,
+    "flow": 0.012656173,
+    "rpm": 4.5324963,
+    "potL": 0.02632,
+    "heading": 0.19556299,
+    "rainbow": 0.026220001,
+    "wheelV": 0.055257632,
+    "evening": 0.0025,
+    "overflowL": 0.018400074,
+    "sectorMud_g": 0.0010008602,
+    "rimFilm_mL": 0.90114111,
+    "leafPosition_m": 0.0025984301,
+    "mote_m": 0.010665534
+  },
+  "uniformWetUpdates": 0,
+  "uniformChanges": {
+    "bladeBend": 0,
+    "rimFilm": 0,
+    "sectorMud": 0
+  }
+}
