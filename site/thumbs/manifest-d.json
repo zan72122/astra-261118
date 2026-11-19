@@ -95,6 +95,10 @@
   "file": "thumbs/d-21.webp",
   "kind": "real"
  },
+ "d-22": {
+  "file": "thumbs/placeholder-d-22.svg",
+  "kind": "placeholder"
+ },
  "d-24": {
   "file": "thumbs/placeholder-d-24.svg",
   "kind": "placeholder"

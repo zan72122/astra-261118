@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#1b2936">
+<title>夕暮れのロボット工房</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#202d38}body{touch-action:none;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}canvas{display:block;width:100%;height:100%;touch-action:none}svg{display:block}.symbols{position:absolute;width:0;height:0;overflow:hidden}
+#badge,#sound,#rail{position:fixed;z-index:2;color:#e0e6e3;background:linear-gradient(140deg,rgba(39,51,59,.95),rgba(19,33,44,.95));border:1px solid #8c9b9b69;box-shadow:0 3px 12px #0a172738,inset 0 1px 0 #edf2eb1c}
+#badge{left:max(24px,env(safe-area-inset-left));top:max(22px,env(safe-area-inset-top));height:44px;border-radius:15px;display:flex;align-items:center;padding:4px 14px 4px 4px;gap:12px;pointer-events:none}.emblem{height:34px;width:38px;display:grid;place-items:center;background:linear-gradient(145deg,#ffc77c,#ef9f57);border-radius:10px;color:#293641;box-shadow:inset 0 1px 0 #ffe6b8}.emblem svg{width:28px;height:28px}.dots{display:flex;align-items:center;gap:6px}.dots i{width:6px;height:6px;border-radius:50%;background:#7c8e9859}.dots i.on{width:14px;border-radius:4px;background:#f9b776;box-shadow:0 0 5px #ffaa5438}
+#sound{top:max(22px,env(safe-area-inset-top));right:max(24px,env(safe-area-inset-right));width:44px;height:44px;border-radius:50%;display:grid;place-items:center;cursor:pointer}#sound svg{width:23px;height:23px}.off .waves,#sound:not(.off) .slash{display:none}
+#rail{bottom:max(20px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;align-items:center;border-radius:24px;padding:5px;gap:5px;pointer-events:none}.tile{width:43px;height:33px;display:grid;place-items:center;border-radius:18px;color:#92a0a6}.tile svg{width:24px;height:24px}.tile.active{box-shadow:inset 0 0 0 1px #e7a05f88;background:#ac763e35;color:#ffbe79}.tile.done{color:#e0eae7}.join{height:2px;width:7px;background:#74818b62}.tile.done+.join{background:#e6a86c}
+#hint{position:fixed;left:0;top:0;width:43px;height:52px;pointer-events:none;opacity:0;z-index:1;filter:drop-shadow(0 2px 3px #142e407a)}
+@media(max-width:600px){#badge{left:14px;top:max(14px,env(safe-area-inset-top))}#sound{right:14px;top:max(14px,env(safe-area-inset-top))}#rail{bottom:max(16px,env(safe-area-inset-bottom))}}
+</style>
+</head>
+<body>
+<svg class="symbols" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="robot" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="5.5" y="10" width="21" height="15" rx="5"/><path d="M16 10V6m-2.5 0h5M3 15v6m26-6v6M12 28h8"/><path d="M11.5 16v3m9-3v3" stroke-width="3"/></g></symbol>
+<symbol id="head" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 20v-3a11 9 0 0 1 22 0v3zM9 24h14M15.5 8V5"/><circle cx="16" cy="15.5" r="3.3"/></g></symbol>
+<symbol id="arm" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="4"/><path d="m7 12 2 9 9 3 3-5-7-3-1-5M23 17l4 1 1.5 4M21 24l3 3 4-2"/><circle cx="11" cy="18" r="1"/></g></symbol>
+<symbol id="feet" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m7 6 7 1-1 13 3 3v3H4v-5l3-2zM20 6l6 1-1 11 4 3v4H18v-5l2-2z"/></g></symbol>
+<symbol id="flag" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M8 27V5c6-4 10 5 17 1l-2.5 9c-7 3-10-5-14.5-1M5 27h8"/></g></symbol>
+</defs></svg>
+<canvas id="game" aria-label="夕暮れのガレージでロボットを組み立てて遊ぶ"></canvas>
+<div id="badge" aria-hidden="true"><span class="emblem"><svg><use href="#robot"/></svg></span><span class="dots"><i class="on"></i><i></i><i></i><i></i></span></div>
+<button id="sound" aria-label="音の切り替え" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9h4l5-4v14l-5-4H3z"/><g class="waves"><path d="M15.5 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></g><path class="slash" d="m16 9 5 6m0-6-5 6"/></svg></button>
+<div id="rail" aria-hidden="true"></div>
+<svg id="hint" viewBox="0 0 44 54" aria-hidden="true"><path d="M14 29 8 22c-3-3-7 1-5 4l10 16c2 3 6 6 10 6h6c6 0 10-6 10-12V24c0-4-5-5-7-2v-3c0-4-6-5-7-1v-3c0-4-6-5-7-1V5c0-5-7-5-7 0v18" transform="translate(2 1)" fill="#fff3d8" fill-opacity=".9" stroke="#63564a" stroke-width="1.5" stroke-linejoin="round"/></svg>
+<script src="vendor/three.min.js"></script>
+<script src="sim.js"></script>
+<script src="models.js"></script>
+<script src="world.js"></script>
+<script src="game.js"></script>
+</body></html>
