@@ -1,0 +1,99 @@
+{
+  "sampleIntervalSeconds": 0.05,
+  "samples": 5132,
+  "results": {
+    "idle": {
+      "dustMaxM": 0.9523243782272814,
+      "dustMinM": 0.09533434495252936,
+      "lamp0Percent": 65,
+      "lamp10Percent": 79.14799451582958,
+      "surfaceMm": 6.563296203039193,
+      "swayDegrees": -0.04678336772775375
+    },
+    "stall": {
+      "torqueNm": 0.19756599951798903,
+      "omega": 0,
+      "timeS": 94.05000000002092
+    },
+    "teeth": [
+      {
+        "teeth": 14,
+        "driverRadS": 1.0999999999977315,
+        "drivenRadS": -1.8857142677693368
+      },
+      {
+        "teeth": 7,
+        "driverRadS": 1.0999999999977315,
+        "drivenRadS": -3.7714285876699525
+      }
+    ],
+    "woundJ": 4.716551283491798,
+    "mechanism": {
+      "pendDegrees": 5.9747777320508595,
+      "dialDegrees": 476.96276071105507,
+      "shaftRadS": -2.6399999172776827
+    },
+    "climb": {
+      "dropM": 2.657616886325841,
+      "upperRadS": 0.7319906125544512
+    },
+    "bellTailDeg": 0.8831644941793236,
+    "hingeDeg": 85.48530303351883,
+    "strikes": 6,
+    "flight": {
+      "seconds": 31.800000000020056,
+      "wake": 1
+    },
+    "firstLights": 14,
+    "town": {
+      "lit": 42,
+      "workRad": 5.421226321541108
+    },
+    "roundTripSeconds": 139.50000000003746,
+    "stages": [
+      "assemble",
+      "wind",
+      "peek",
+      "climb",
+      "ascent",
+      "bell",
+      "window",
+      "view",
+      "flight",
+      "landing",
+      "rooftop",
+      "lights",
+      "rest",
+      "return",
+      "assemble"
+    ]
+  },
+  "maximum": {
+    "gearAngle": 0.18858000000000175,
+    "gearPosition": 0.16766360845454822,
+    "pend": 0.03515,
+    "upper": 0.036599999999999966,
+    "dial": 0.04592000000000007,
+    "spring": 0.11088000000000076,
+    "ladder": 0.09022000000000008,
+    "bell": 0.052169999999999994,
+    "clapper": 0.11127000000000001,
+    "pane": 0.07090000000000002,
+    "hand": 0.03597000000000028,
+    "bird": 0.3388317777304846,
+    "dust": 0.018296633570140813,
+    "water": 0.00575,
+    "lampHeat": 0.008809999999999985,
+    "hinge": 0.07090000000000002,
+    "houseHeat": 0.11760999999999999
+  },
+  "nonstationarySamples": {
+    "flock": 1925,
+    "dust": 5128,
+    "water": 4957,
+    "lampHeat": 5128,
+    "hinge": 110,
+    "districts": 573
+  },
+  "uniformAtRecordedPrecision": {}
+}

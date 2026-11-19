@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#342c25"><title>時計塔のはぐるまをまわす</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#cbbda6}body{touch-action:none;user-select:none}canvas{display:block;width:100%;height:100%;touch-action:none}
+#finish{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 49% 45%,transparent 49%,rgba(43,25,20,.14) 100%)}button{color:#f1ddb1;cursor:pointer}
+#sound{position:fixed;right:max(20px,env(safe-area-inset-right));top:max(19px,env(safe-area-inset-top));width:43px;height:43px;display:grid;place-items:center;border:1px solid #daca9fa8;border-radius:50%;background:linear-gradient(150deg,#51433bed,#312c29eb);box-shadow:0 2px 7px #22180f45,inset 0 0 0 3px #352c2a,inset 0 0 0 4px #b7a27e61}#sound svg{width:21px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.off #wave,.on #cross{display:none}
+#chapters{position:fixed;bottom:max(19px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:space-between;gap:13px;padding:6px 12px;background:linear-gradient(#423a33f5,#2d2825f7);border:1px solid #a99570;border-radius:26px;box-shadow:0 3px 12px #211b1950,inset 0 0 0 2px #392f2a;pointer-events:none}
+#chapters i{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;color:#b7a78d;opacity:.7;position:relative}#chapters i:not(:last-child):after{content:'';position:absolute;left:calc(100% + 4px);width:5px;height:1px;background:#ad9a7c}#chapters i.active{color:#ffe3a3;opacity:1;background:radial-gradient(circle,#736044,#4f4435);box-shadow:0 0 0 1px #d0ad70,inset 0 0 0 2px #453a2c}#chapters svg{height:18px;width:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round}
+#guide{pointer-events:none;position:fixed;top:0;left:0;width:36px;height:45px;filter:drop-shadow(0 2px 3px #3a241e80);opacity:0;will-change:transform}#guide path{fill:#fff2d3e8;stroke:#72563e;stroke-width:1.5}
+</style></head><body>
+<canvas id="world" aria-label="時計塔"></canvas><div id="finish"></div>
+<button id="sound" class="on" aria-label="音を消す" aria-pressed="true"><svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z"/><path id="wave" d="M16 8q4 4 0 8m3-11q6 7 0 14"/><path id="cross" d="m16 9 5 6m0-6-5 6"/></svg></button>
+<div id="chapters" aria-hidden="true">
+<i class="active"><svg viewBox="0 0 24 24"><path d="m10 2.8 4 0 .6 2.6 2 .9 2.3-1.2 2 3.4-1.8 1.8.2 2.7 1.8 1.6-2 3.5-2.5-.7-2 .9-.7 2.8h-4l-.7-2.8-2-.9-2.5.7-2-3.5L4.6 13v-2.5L2.9 8.6l2-3.4 2.5 1.1 2-.9z"/><circle cx="12" cy="12" r="3.5"/></svg></i>
+<i><svg viewBox="0 0 24 24"><path d="m5 21 4-18m6 18 4-18M8 7h10M7 12h10M6 17h10"/></svg></i>
+<i><svg viewBox="0 0 24 24"><path d="M4 17c4-3 2-8 4-11q4-5 8 0c2 3 0 8 4 11zM10 20q2 2 4 0M12 2v1"/></svg></i>
+<i><svg viewBox="0 0 24 24"><path d="M2 17h20M4 20h16M7 16a5 5 0 0 1 10 0M12 3v3M3 8l2 2m14 0 2-2M2 14h2m16 0h2"/></svg></i></div>
+<svg id="guide" aria-hidden="true" viewBox="0 0 38 46"><path d="M10 25 6 12Q4 6 8 5q3-1 5 5l4 12-1-5q0-5 4-3l3 6q-1-7 3-5l3 5q1-5 4-1l2 9q1 6-2 10l-2 5-13 1-2-5L5 32q-5-5-2-7 2-2 7 2z"/></svg>
+<script src="vendor/three.min.js"></script><script src="mechanism.js"></script><script src="atelier.js"></script><script src="world.js"></script><script src="play.js"></script>
+</body></html>
