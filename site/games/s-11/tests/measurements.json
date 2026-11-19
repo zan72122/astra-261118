@@ -1,0 +1,197 @@
+{
+  "sampleIntervalSeconds": 0.05,
+  "samples": 6921,
+  "activePatches": 137,
+  "changedFieldSteps": 44186,
+  "uniformChanges": {},
+  "freshBatchBoundaries": 1,
+  "maxima": {
+    "h": {
+      "delta": 0.0045172,
+      "run": "complete_recipe",
+      "time": 1
+    },
+    "v": {
+      "delta": 0.03634888,
+      "run": "complete_recipe",
+      "time": 30.1
+    },
+    "air": {
+      "delta": 0.00942183,
+      "run": "complete_recipe",
+      "time": 1.95
+    },
+    "fine": {
+      "delta": 0.00939488,
+      "run": "complete_recipe",
+      "time": 13.6
+    },
+    "cut": {
+      "delta": 0.07325782,
+      "run": "complete_recipe",
+      "time": 26.5
+    },
+    "white": {
+      "delta": 0.033385,
+      "run": "complete_recipe",
+      "time": 27.3
+    },
+    "swirl": {
+      "delta": 0.35459385,
+      "run": "complete_recipe",
+      "time": 35.4
+    },
+    "sugar": {
+      "delta": 0.02276794,
+      "run": "complete_recipe",
+      "time": 16.3
+    },
+    "heat": {
+      "delta": 0.80314659,
+      "run": "complete_recipe",
+      "time": 102.55
+    },
+    "moisture": {
+      "delta": 0.00085264,
+      "run": "complete_recipe",
+      "time": 102.5
+    },
+    "set": {
+      "delta": 0.00431694,
+      "run": "base_mass_air",
+      "time": 23.75
+    },
+    "brown": {
+      "delta": 0.00104006,
+      "run": "complete_recipe",
+      "time": 102.5
+    },
+    "fill": {
+      "delta": 0.00005163,
+      "run": "more_mass",
+      "time": 5.5
+    },
+    "gas": {
+      "delta": 0.00002309,
+      "run": "more_air",
+      "time": 5.2
+    },
+    "rise": {
+      "delta": 0.00733194,
+      "run": "more_mass",
+      "time": 5.8
+    },
+    "jig": {
+      "delta": 0.03229647,
+      "run": "partial_peel",
+      "time": 0.75
+    },
+    "jv": {
+      "delta": 0.17672926,
+      "run": "partial_peel",
+      "time": 0.6
+    }
+  },
+  "measure": {
+    "idle": {
+      "seconds": 10,
+      "maxShiftMm": 0.431699713413301,
+      "lightStart": 0.82,
+      "lightEnd": 0.9484174955475768,
+      "inactiveToolDisplacementMm": 0
+    },
+    "retrace": {
+      "firstAir": 0.07619111437860665,
+      "edgeAir": 0.02262687418778978,
+      "firstFine": 0.05681882039530903,
+      "secondFine": 0.08171903335473879,
+      "trailBubbles": 80
+    },
+    "lift": [
+      {
+        "retention": 0.5343042192184043,
+        "bandHz": 1045.5866011434023,
+        "falling": 0.6491671769609825,
+        "peakMm": 7.449393428908138,
+        "peak": 0.046649566206575024
+      },
+      {
+        "retention": 0.9133548658591283,
+        "bandHz": 4440,
+        "falling": 0,
+        "peakMm": 28.522048225249225,
+        "peak": 0.6031404380180487
+      }
+    ],
+    "fold": {
+      "before": 0.36397005711686176,
+      "after": 0.33525692960289605,
+      "localSwirl": 0.8210047366701446,
+      "outsideSwirl": 0.000013829784929359538
+    },
+    "bakes": [
+      {
+        "massKg": 0.42,
+        "air": 0.26,
+        "massInPan": 0.41999999999999976,
+        "centreHeightMm": 119.10473611113935,
+        "surfaceC": 142.30956072731817,
+        "brown": 0.2802697440264793
+      },
+      {
+        "massKg": 0.54,
+        "air": 0.26,
+        "massInPan": 0.5399999999999999,
+        "centreHeightMm": 144.6478634352456,
+        "surfaceC": 142.30956072731817,
+        "brown": 0.2802697440264793
+      },
+      {
+        "massKg": 0.42,
+        "air": 0.52,
+        "massInPan": 0.41999999999999976,
+        "centreHeightMm": 146.93926857667043,
+        "surfaceC": 142.30956072731817,
+        "brown": 0.2802697440264793
+      }
+    ],
+    "peel": {
+      "fraction": 0.264,
+      "maxMm": 8.300005673322563,
+      "extremaAfterStop": [
+        {
+          "afterPaperStops": 0.15,
+          "offsetMm": 2.25025017
+        },
+        {
+          "afterPaperStops": 0.55,
+          "offsetMm": -1.42849521
+        },
+        {
+          "afterPaperStops": 1,
+          "offsetMm": 0.84599284
+        }
+      ]
+    },
+    "loop": {
+      "duration": 145.35,
+      "popSeconds": 0.1,
+      "sugarPortions": 3,
+      "entries": {
+        "whisk": 0,
+        "peak": 20.95,
+        "fold": 25.45,
+        "ribbon": 37.3,
+        "pour": 41.75,
+        "push": 48.1,
+        "bath": 51.3,
+        "bake": 57.85,
+        "cool": 102.5,
+        "peel": 119.95,
+        "serve": 132.4,
+        "return": 137.8
+      },
+      "returnedBatch": 2
+    }
+  }
+}
