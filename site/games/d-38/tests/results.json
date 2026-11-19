@@ -1,0 +1,136 @@
+{
+  "idle": {
+    "seconds": 10,
+    "windRange0": 0.7098400590152408,
+    "leafRange0": 0.0892017869690809,
+    "waterRange10": 0.02493419354584031,
+    "sunRange": 0.02878295902661553,
+    "dustTravel0": 0.283312876880055
+  },
+  "mass": [
+    {
+      "mass": 5,
+      "heightAtHalfSecond": 1.1226594874941624,
+      "staticMaxShock": 0.012671572561085708,
+      "maxImpulseSpeed": 1.6350013656250932
+    },
+    {
+      "mass": 15,
+      "heightAtHalfSecond": 0.6615916092748826,
+      "staticMaxShock": 0.03801471767362601,
+      "maxImpulseSpeed": 1.716751363531383
+    }
+  ],
+  "journey": {
+    "seconds": 153.1,
+    "landings": 10,
+    "chairOverhang": 0.26954845346695144,
+    "maximumChairTilt": 0.2879291451589827,
+    "securedChairTilt": 1.8621823476612066e-53,
+    "ropeLoose": 0.24073892548159498,
+    "ropeTight": -4.322687571162049e-60,
+    "doorTravel": 2.4800087101065005,
+    "bridgeStart": [
+      1.13,
+      1.28
+    ],
+    "bridgeEnd": [
+      0.005939859560443428,
+      0.02544045223617389
+    ],
+    "crankTurn": 9.43390746675192,
+    "windowAngles": [
+      1.1900000000000048,
+      1.3200000000000034
+    ],
+    "wheelRadians": [
+      47.85957545820951,
+      47.37228869646942,
+      47.772980531245004,
+      47.40894860645357
+    ],
+    "boatTravel": 9.229665347538528,
+    "boatSpeed": 1.3073533514011126,
+    "boatHeel": 0.09282082643958267,
+    "cameraPull": 0.6499999999999979,
+    "sailHeight": 1.5850599520256157
+  },
+  "fastestCargo": {
+    "name": "mass-5",
+    "time": 0.2,
+    "id": 0,
+    "previous": "held",
+    "mode": "held",
+    "deltaCargo": 0.2016063758863768
+  },
+  "maxDelta": {
+    "wind": 0.09154900989903014,
+    "leaf": 0.008573289038326617,
+    "light": 0.002121934292248842,
+    "dust": 0.02573989550942457,
+    "waves": 0.006528295652390673,
+    "rope": 0.03993716794171076,
+    "shocks": 0.012283280618354039,
+    "door": 0.033825104596029665,
+    "bridge": 0.023127241824482003,
+    "shutters": 0.026054035374632023,
+    "wheel": 0.34473891817004443,
+    "yaw": 0.0822684507282666,
+    "cargo": 0.2016063758863768,
+    "tilt": 0.030588029692513605
+  },
+  "uniform": {
+    "wind": {
+      "moving": 3899,
+      "identical": 0
+    },
+    "leaf": {
+      "moving": 3899,
+      "identical": 0
+    },
+    "light": {
+      "moving": 3895,
+      "identical": 0
+    },
+    "dust": {
+      "moving": 3899,
+      "identical": 0
+    },
+    "waves": {
+      "moving": 3899,
+      "identical": 0
+    },
+    "rope": {
+      "moving": 1706,
+      "identical": 0
+    },
+    "shocks": {
+      "moving": 431,
+      "identical": 0
+    },
+    "door": {
+      "moving": 95,
+      "identical": 0
+    },
+    "bridge": {
+      "moving": 156,
+      "identical": 0
+    },
+    "shutters": {
+      "moving": 151,
+      "identical": 0
+    },
+    "wheel": {
+      "moving": 211,
+      "identical": 0
+    },
+    "yaw": {
+      "moving": 635,
+      "identical": 0
+    }
+  },
+  "boundaries": {
+    "worldCuts": 3,
+    "newlyDelivered": 4
+  }
+}

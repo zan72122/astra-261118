@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#b2d5da">
+<title>ひっこしトラックに荷をのせる</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#b4d3d1;touch-action:none;overscroll-behavior:none}#world{position:fixed;inset:0;display:block;width:100%;height:100%;touch-action:none;outline:0;cursor:default}
+#hud{position:fixed;inset:0;pointer-events:none;user-select:none}
+#journey{position:absolute;top:calc(env(safe-area-inset-top) + 24px);left:calc(env(safe-area-inset-left) + 25px);display:flex;align-items:center;gap:7px;padding:6px 12px 6px 6px;border:1px solid #fffff1b5;border-radius:30px;background:linear-gradient(155deg,#fff8e8f7,#eee9d8ec);box-shadow:0 3px 0 #7f816b44,0 5px 16px #344e4824}
+.node{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;color:#75847b;transition:background .35s,color .35s;}.node svg{width:22px;height:22px;stroke-width:1.7}.node.current{color:#fff6dc;background:linear-gradient(150deg,#e3a650,#ce8639);box-shadow:inset 0 0 0 1px #b77d3690,0 1px 2px #ad87575c}.node.done{color:#50817b}i{width:8px;height:2px;border-radius:3px;background:#b6b9a7}
+#sound{pointer-events:auto;position:absolute;top:calc(env(safe-area-inset-top) + 25px);right:calc(env(safe-area-inset-right) + 25px);width:46px;height:46px;display:grid;place-items:center;border:1px solid #ffffebd9;border-radius:50%;background:linear-gradient(140deg,#fff9e9,#ece8d7);color:#4c6d65;box-shadow:0 3px 0 #7f816b44,0 5px 16px #344e4824;cursor:pointer}#sound:active{transform:translateY(2px)}#sound svg{width:23px;height:23px}#sound .off,#sound.muted .on{display:none}#sound.muted .off{display:block}svg{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+#hint{position:absolute;width:43px;height:53px;left:0;top:0;opacity:0;will-change:transform;filter:drop-shadow(0 2px 2px #343e3f49);transform-origin:8px 8px}#hint path{fill:#fff6df;stroke:#7c806a;stroke-width:1.6}#fade{position:fixed;inset:0;pointer-events:none;background:#f3eed9;opacity:0}
+@media(max-width:600px){#journey{left:14px;top:calc(env(safe-area-inset-top) + 15px);gap:3px;padding:5px 8px 5px 5px}.node{width:29px;height:29px}.node svg{width:19px;height:19px}i{width:6px}#sound{right:14px;top:calc(env(safe-area-inset-top) + 15px);height:40px;width:40px}}
+</style>
+</head>
+<body>
+<canvas id="world" aria-label="引っ越しの庭"></canvas>
+<div id="hud"><div id="journey" aria-hidden="true">
+<span class="node current"><svg viewBox="0 0 24 24"><path d="m3 7 9-4 9 4-9 5zM3 7v10l9 5 9-5V7M12 12v10M7.5 5l9 4.5v4"/></svg></span><i></i>
+<span class="node"><svg viewBox="0 0 24 24"><path d="M3 13h18M12 11c-4.5.5-8.2-1.7-7.6-4.6.5-2.7 5.1-3 7.6 4.6Zm0 0c4.5.5 8.2-1.7 7.6-4.6-.5-2.7-5.1-3-7.6 4.6ZM12 12l-5.2 8 3.4-.5M12 12l5.2 8-3.4-.5"/></svg></span><i></i>
+<span class="node"><svg viewBox="0 0 24 24"><path d="M2.5 5h12v12.5h-4M5 17.5H2.5V5M14.5 9H18l3.7 4.3v4.2h-2.3M15 17.5h-.5M15.5 13H21"/><circle cx="7.5" cy="18" r="2.3"/><circle cx="17.3" cy="18" r="2.3"/></svg></span><i></i>
+<span class="node"><svg viewBox="0 0 24 24"><path d="m2.5 11 9.5-8 9.5 8M5.3 9.5v11h13.4v-11M10 20v-6h4v6"/></svg></span></div>
+<button id="sound" aria-label="音を切り替える" aria-pressed="true"><svg viewBox="0 0 24 24"><path d="M3 9h4l5-4v14l-5-4H3z" fill="currentColor" stroke-width="1.1"/><g class="on" stroke-width="1.8"><path d="M15.6 8.2a5.4 5.4 0 0 1 0 7.6M18.6 5.3a9.6 9.6 0 0 1 0 13.4"/></g><path class="off" d="m16 9 5 6m0-6-5 6" stroke-width="2"/></svg></button>
+<svg id="hint" viewBox="0 0 43 53" aria-hidden="true"><path d="M13.6 28.8 6.8 12.4c-1.8-4.4 3.4-6.4 5.2-2.6l6.1 12.7-1.1-3c-1.1-3.4 3.2-5.2 5.2-1.9l1.3 2.2c-1.7-4.4 3.1-6.1 5.3-2.3l1.5 2.7c-1.1-3.7 3.4-4.8 5.1-1.2l4.1 9.3c1.9 4 .9 7.4-.9 11.1l-2.2 4.1-11.4 5-5.3-3.4c-4.8-2.3-9.5-5.5-12.7-9.3L3 31.7c-2.1-3.3 1.5-6.2 4.1-4.4l6.4 4.5Z"/></svg></div>
+<div id="fade"></div>
+<script src="vendor/three.min.js"></script>
+<script src="sim.js"></script>
+<script src="kit.js"></script>
+<script src="models.js"></script>
+<script src="scenery.js"></script>
+<script src="sound.js"></script>
+<script src="game.js"></script>
+</body></html>
