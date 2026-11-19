@@ -1,0 +1,392 @@
+{
+  "dt_s": 0.05,
+  "records": {
+    "idle": 201,
+    "wet": 93,
+    "dry": 93,
+    "rewet": 121,
+    "workshop": 3641
+  },
+  "observed": {
+    "idle": {
+      "seconds": 10,
+      "rpm": 120,
+      "revolutions": 19.9764,
+      "hintStart_s": 4.05,
+      "dustCellFraction": 0.24197,
+      "waterPeak_cm": 0.151,
+      "sway_rad": 0.01379
+    },
+    "wet": {
+      "holeGain_cm": 5.51607,
+      "rimGain_cm": 1.88946,
+      "afterRelease_cm": 0.15121
+    },
+    "dry": {
+      "holeGain_cm": 1.03599,
+      "rimGain_cm": 0.0342,
+      "afterRelease_cm": 0.00336
+    },
+    "waterPickup": 0.27246,
+    "workshop": {
+      "time_s": 182,
+      "stages": [
+        [
+          0,
+          "shape"
+        ],
+        [
+          9.8,
+          "aligned"
+        ],
+        [
+          12.75,
+          "glaze"
+        ],
+        [
+          12.8,
+          "pour"
+        ],
+        [
+          18.75,
+          "kilnReady"
+        ],
+        [
+          18.8,
+          "pour"
+        ],
+        [
+          24.75,
+          "kilnReady"
+        ],
+        [
+          24.8,
+          "loading"
+        ],
+        [
+          28.5,
+          "firing"
+        ],
+        [
+          43.5,
+          "unloading"
+        ],
+        [
+          47.25,
+          "display"
+        ],
+        [
+          51.25,
+          "shape"
+        ],
+        [
+          66.1,
+          "coil"
+        ],
+        [
+          66.15,
+          "winding"
+        ],
+        [
+          70.4,
+          "coilSeal"
+        ],
+        [
+          72.85,
+          "aligned"
+        ],
+        [
+          75.75,
+          "glaze"
+        ],
+        [
+          75.8,
+          "pour"
+        ],
+        [
+          81.75,
+          "kilnReady"
+        ],
+        [
+          81.8,
+          "loading"
+        ],
+        [
+          85.5,
+          "firing"
+        ],
+        [
+          100.5,
+          "unloading"
+        ],
+        [
+          104.25,
+          "display"
+        ],
+        [
+          108.25,
+          "shape"
+        ],
+        [
+          116.95,
+          "stack"
+        ],
+        [
+          117,
+          "nesting"
+        ],
+        [
+          120.1,
+          "aligned"
+        ],
+        [
+          123,
+          "glaze"
+        ],
+        [
+          123.05,
+          "pour"
+        ],
+        [
+          129,
+          "kilnReady"
+        ],
+        [
+          129.05,
+          "loading"
+        ],
+        [
+          132.75,
+          "firing"
+        ],
+        [
+          147.75,
+          "unloading"
+        ],
+        [
+          151.5,
+          "display"
+        ],
+        [
+          155.5,
+          "flower"
+        ],
+        [
+          155.55,
+          "planting"
+        ],
+        [
+          159,
+          "flower"
+        ],
+        [
+          159.05,
+          "planting"
+        ],
+        [
+          162.5,
+          "flower"
+        ],
+        [
+          162.55,
+          "planting"
+        ],
+        [
+          166,
+          "bouquet"
+        ],
+        [
+          173,
+          "dawn"
+        ]
+      ],
+      "kinds": [
+        "vase",
+        "jar",
+        "bowl"
+      ],
+      "thermalSpread_C": 327.74592,
+      "glazeFourRingsDelay_s": 1.85,
+      "glazeMax": [
+        1,
+        1,
+        1
+      ],
+      "finalDaylight": 0.05387
+    }
+  },
+  "ranges": {
+    "radius_cm": [
+      3.76987,
+      14.4458
+    ],
+    "wall_cm": [
+      0,
+      19.87
+    ],
+    "moisture": [
+      0.08343,
+      0.846
+    ],
+    "radialSpeed_cm_s": [
+      -2.04388,
+      1.06715
+    ],
+    "water_cm": [
+      -0.19162,
+      0.1447
+    ],
+    "waterSpeed_cm_s": [
+      -1.75652,
+      1.29901
+    ],
+    "dust_x": [
+      0.01456,
+      0.99332
+    ],
+    "dust_y": [
+      0.05285,
+      0.98169
+    ],
+    "sway_rad": [
+      -0.00488,
+      0.01703
+    ],
+    "glaze": [
+      0,
+      1
+    ],
+    "liquid": [
+      0,
+      2.45086
+    ],
+    "dyes": [
+      0,
+      1
+    ],
+    "temperature_C": [
+      25,
+      1192.1753
+    ],
+    "wareTemperature_C": [
+      24,
+      970.65639
+    ],
+    "vitrified": [
+      0,
+      0.99991
+    ],
+    "flame_height": [
+      0,
+      0.65699
+    ],
+    "wrap": [
+      0,
+      1
+    ],
+    "depth_cm": [
+      1.35,
+      17.98567
+    ],
+    "motor_rpm": [
+      0,
+      120
+    ],
+    "motor_rad": [
+      0,
+      604.84085
+    ],
+    "force": [
+      0,
+      0.851
+    ],
+    "match": [
+      0,
+      0.92176
+    ],
+    "shadowSlot": [
+      -1,
+      1
+    ],
+    "jarTilt": [
+      0,
+      1
+    ],
+    "door": [
+      0,
+      1
+    ],
+    "transport": [
+      0,
+      1.99509
+    ],
+    "stack": [
+      0,
+      1
+    ],
+    "flowerTravel": [
+      0,
+      0.99508
+    ],
+    "daylight": [
+      0,
+      0.99999
+    ],
+    "wind": [
+      -0.16106,
+      0.60214
+    ],
+    "hint": [
+      0,
+      1
+    ]
+  },
+  "maxAdjacent": {
+    "radius_cm": 0.10215,
+    "wall_cm": 0.20721,
+    "moisture": 0.02595,
+    "radialSpeed_cm_s": 0.56821,
+    "water_cm": 0.09559,
+    "waterSpeed_cm_s": 1.58229,
+    "dust_x": 0.00315,
+    "dust_y": 0.00612,
+    "sway_rad": 0.0009,
+    "glaze": 0.11873,
+    "liquid": 0.41219,
+    "dyes": 0.11741,
+    "temperature_C": 6.82902,
+    "wareTemperature_C": 9.19598,
+    "vitrified": 0.0197,
+    "flame_height": 0.091,
+    "wrap": 0.03693,
+    "depth_cm": 0.13583,
+    "motor_rpm": 11.91589,
+    "motor_rad": 0.62832,
+    "force": 0.18824,
+    "match": 0.03352,
+    "shadowSlot": 0.14744,
+    "jarTilt": 0.06212,
+    "door": 0.06615,
+    "transport": 0.03284,
+    "stack": 0.04789,
+    "flowerTravel": 0.03363,
+    "daylight": 0.00933,
+    "wind": 0.02793,
+    "hint": 0.15
+  },
+  "activeSectionSamples": {
+    "moisture": 1220,
+    "water_cm": 4144,
+    "dust_x": 4144,
+    "sway_rad": 4144,
+    "temperature_C": 4144,
+    "radius_cm": 1123,
+    "wall_cm": 1126,
+    "glaze": 2343,
+    "wareTemperature_C": 2080,
+    "flame_height": 740,
+    "vitrified": 591,
+    "wrap": 86
+  },
+  "uniformSectionSamples": {}
+}
