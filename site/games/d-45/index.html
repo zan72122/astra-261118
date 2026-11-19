@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#ab96ad">
+<title>藤のタイル工房</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#b9a6b7;overscroll-behavior:none}
+body{touch-action:none;user-select:none;-webkit-user-select:none}
+#world,#gesture{position:absolute;inset:0;width:100%;height:100%;display:block}
+#gesture{pointer-events:none}
+#chapters{position:absolute;top:max(22px,env(safe-area-inset-top));left:max(25px,env(safe-area-inset-left));display:flex;align-items:center;gap:15px;pointer-events:none;height:49px}
+.seal,.sound{border-radius:50%;position:relative;display:grid;place-items:center;background:linear-gradient(145deg,#f6e9d5,#dfcdbb);box-shadow:0 2px 4px #58425630,inset 0 1px 2px #fff6e7}
+.seal{width:36px;height:36px;border:1px solid #b49aa0;transition:transform .65s,background .65s;z-index:1}
+.seal canvas{width:84%;height:84%;opacity:.62}
+.seal::before,.sound::before{content:"";position:absolute;inset:3px;border-radius:inherit;border:1px solid #c3ab9f}
+.seal+ .seal::after{content:"";position:absolute;width:11px;height:2px;right:calc(100% + 2px);background:#b89c83;box-shadow:0 1px #e4d2c4}
+.seal.current{background:linear-gradient(150deg,#967d94,#644d69);border-color:#d9be92;transform:scale(1.19);box-shadow:0 2px 5px #44334440,0 0 0 2px #f4e2c982}
+.seal.current::before{border-color:#d6bd9f}.seal.current canvas,.seal.past canvas{opacity:1}
+.sound{position:absolute;top:max(23px,env(safe-area-inset-top));right:max(24px,env(safe-area-inset-right));width:45px;height:45px;border:1px solid #b29a9b;padding:0;cursor:pointer;touch-action:manipulation}
+.sound canvas{width:65%;height:65%}.sound:active{transform:translateY(1px)}
+.sound:focus-visible{outline:3px solid #654a68;outline-offset:4px}
+@media(max-width:540px){#chapters{top:max(19px,env(safe-area-inset-top));left:20px;gap:11px}.seal{width:31px;height:31px}.seal+ .seal::after{width:7px}.sound{top:max(23px,env(safe-area-inset-top));right:18px;width:39px;height:39px}}
+</style>
+</head>
+<body>
+<canvas id="world" aria-label="タイルをはめて部屋をつくる"></canvas>
+<canvas id="gesture" aria-hidden="true"></canvas>
+<div id="chapters" aria-label="部屋の移り変わり"></div>
+<button class="sound" aria-label="音を消す" aria-pressed="true"><canvas width="80" height="80" aria-hidden="true"></canvas></button>
+<script src="vendor/three.min.js"></script>
+<script src="simulation.js"></script>
+<script src="materials.js"></script>
+<script src="model.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
